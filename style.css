@@ -1,10 +1,24 @@
 .explorer_button {
-  padding: 3px;
-  margin-bottom: 40px; }
+  padding: 8px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  font-size: 11px; }
 
 .wrappe {
   background-color: #f5f5f0;
   padding-top: 20px; }
+
+.Fonctionnement {
+  margin-left: 15px; }
+
+.button_group {
+  font-size: 11px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f5f5f0;
+  margin-bottom: 10px;
+  box-shadow: 5px;
+  width: 80%; }
 
 @media (max-width: 767px) {
   #div_logo {
