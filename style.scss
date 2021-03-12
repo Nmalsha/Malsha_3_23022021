@@ -1,22 +1,57 @@
+$font-size : 11px 12px 13px 14px 18px;
+
+
+.explorer_button{
+padding: 3px;
+margin-bottom: 40px;
+}
+.wrappe{
+    
+    background-color:#f5f5f0 ;
+    padding-top:20px; ;
+}
+@media(max-width:767px){
+    #div_logo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 .logo{
-    height:1.5rem;align-items:center;font-size: 11px;margin-left: 100px;
+    height:1.5rem;align-items:center;font-size:nth($font-size,1);
     
 }
 .input-icons i { 
     position: absolute; 
 } 
-.input-icons { 
-    width: 100%; 
-    margin-bottom: 10px; 
-} 
+ 
 .icon { 
     padding: 10px; 
     min-width: 40px; 
-    margin-left: 80px;
+    margin-left: 75px;
+    margin-top: 5px;
 } 
 .input-field { 
     width: 100%; 
     padding: 10px; 
     text-align: center; 
-} 
-  
+    font-size:nth($font-size,3);
+    opacity: 0.7;
+    border: none;
+    background-color:#e0e0d1;
+    box-shadow: 20px;
+   } 
+#presentation{
+    text-align: center;
+    line-height: 1;
+    
+}
+#text1{
+    margin-top: 25px;
+    font-size:nth($font-size,5);
+    font-weight: bold;
+}
+#text2{
+    font-size:nth($font-size,3);
+    opacity: 0.7;
+}
+}
