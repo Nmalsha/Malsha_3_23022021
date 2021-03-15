@@ -1,13 +1,16 @@
+/* explorer button*/
 .explorer_button {
   padding: 8px;
   margin-bottom: 40px;
   border-radius: 20px;
   font-size: 11px; }
 
+/* first wrapper*/
 .wrappe {
   background-color: #f5f5f0;
   padding-top: 20px; }
 
+/* functionnement button section*/
 .Fonctionnement {
   margin-left: 15px; }
 
@@ -17,8 +20,53 @@
   border-radius: 20px;
   background-color: #f5f5f0;
   margin-bottom: 10px;
-  box-shadow: 5px;
+  box-shadow: 2px 5px #888888;
   width: 80%; }
+
+/* restaurent  section*/
+.wrapper_restaurent {
+  display: grid;
+  justify-content: center;
+  background-color: #f5f5f0; }
+
+.img_restaurent {
+  height: 8rem;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px; }
+
+.card {
+  border-radius: 10px;
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px; }
+
+.cardtext_container {
+  display: flex;
+  justify-content: space-between; }
+
+.card_text {
+  color: black;
+  line-height: 0.4;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left; }
+
+.text3 {
+  font-weight: bold;
+  font-size: 11px; }
+
+.text4 {
+  font-size: 11px; }
+
+.hart_icon {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.icon_link {
+  color: black; }
 
 @media (max-width: 767px) {
   #div_logo {
