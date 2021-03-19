@@ -61,8 +61,7 @@
   border-radius: 10px;
   width: 15rem;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5px; }
+  flex-wrap: wrap; }
 
 .cardtext_container {
   display: flex;
@@ -82,7 +81,71 @@
 .text4 {
   font-size: 11px; }
 
-    /*
+.like {
+  position: relative; }
+
+.default_i {
+  z-index: 1;
+  width: 25px; }
+
+.houver_i {
+  z-index: 2;
+  width: 25px;
+  margin-left: -25px;
+  position: absolute;
+  opacity: 0;
+  margin-top: 2px; }
+
+.default_i:focus {
+  cursor: alias;
+  opacity: 0; }
+
+.houver_i:focus {
+  opacity: 1; }
+
+.heart_1:hover {
+  background: url(img/canvass.png);
+  background-repeat: no-repeat;
+  transition: max-height 0.25s ease-in; }
+
+/*
+.wrapp{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+ 
+}
+
+.heart {
+    color: red;
+    background-color: currentColor;
+    display: inline-block;
+    height: 25px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute; 
+    left: 45%; top: 45%;
+    width: 25px;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    background-color: currentColor;
+    border-radius: 50%;
+    height: 25px;
+    position: absolute;
+    width: 25px;
+  }
+  
+  .heart:before {
+    top: -25px;
+    left: 0;
+
+    
 .hart_icon{
     
     margin-top:10px ;
@@ -96,25 +159,46 @@
     background: url(img/violethart.png);
     background-repeat: no-repeat;
     transition: max-height 0.25s ease-in;
-}*/
-.heart {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: 30px;
-  height: 30px;
+}
+.heart{margin-top:10px ;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
   transition: max-height 0.15s ease-out;
   overflow: hidden;
   background: url("img/iconmonstr-heart-thin.svg") no-repeat;
-  padding: 50px; }
-
+  padding: 50px;
+}
 .heart:hover {
-  background: url("https://img.icons8.com/officexs/32/000000/like.png") no-repeat;
-  max-height: 500px;
-  transition: max-height 0.25s ease-in; }
+    background: url("https://img.icons8.com/officexs/32/000000/like.png")
+      no-repeat;
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+  }
+*/
+/* Footer section */
+.footer {
+  background-color: #424224; }
 
-.icon_link {
-  color: black; }
+#footer_logo {
+  margin-top: 10px;
+  padding-top: 20px;
+  display: grid;
+  justify-content: center; }
+
+ul {
+  text-decoration: none; }
+
+.footer_i {
+  color: white; }
+
+.links {
+  justify-content: center;
+  display: grid; }
+
+.footer_link {
+  margin-left: 5px; }
 
 @media (max-width: 767px) {
   #div_logo {

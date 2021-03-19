@@ -81,7 +81,7 @@ background-image: linear-gradient($primary-color, $secondary-color);
     width: 15rem;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5px;
+    
     
      }
      .cardtext_container{
@@ -104,7 +104,74 @@ background-image: linear-gradient($primary-color, $secondary-color);
         
         font-size:nth($font-size,1);
     }
-    /*
+    .like{
+        position: relative;
+    }
+    .default_i{
+        z-index: 1;
+        width: 25px;
+}
+    .houver_i{
+        z-index: 2;
+        width: 25px;
+        margin-left: -25px;
+        position: absolute;
+        opacity: 0;
+        margin-top: 2px;
+
+    }
+    .default_i:focus{
+       cursor: alias;
+       opacity: 0;
+}
+.houver_i:focus{
+    opacity: 1;
+   
+
+}
+.heart_1:hover{
+    background: url(img/canvass.png);
+    background-repeat: no-repeat;
+    transition: max-height 0.25s ease-in;
+}
+/*
+.wrapp{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+ 
+}
+
+.heart {
+    color: red;
+    background-color: currentColor;
+    display: inline-block;
+    height: 25px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute; 
+    left: 45%; top: 45%;
+    width: 25px;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    background-color: currentColor;
+    border-radius: 50%;
+    height: 25px;
+    position: absolute;
+    width: 25px;
+  }
+  
+  .heart:before {
+    top: -25px;
+    left: 0;
+
+    
 .hart_icon{
     
     margin-top:10px ;
@@ -118,7 +185,7 @@ background-image: linear-gradient($primary-color, $secondary-color);
     background: url(img/violethart.png);
     background-repeat: no-repeat;
     transition: max-height 0.25s ease-in;
-}*/
+}
 .heart{margin-top:10px ;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -135,14 +202,35 @@ background-image: linear-gradient($primary-color, $secondary-color);
     max-height: 500px;
     transition: max-height 0.25s ease-in;
   }
+*/
 
-
-
-
-.icon_link{
-    color: black;
+/* Footer section */
+.footer{
+    background-color:#424224 ;
+    
+}
+#footer_logo{
+    margin-top: 10px;
+    padding-top: 20px;
+    display: grid;
+justify-content: center;
 }
 
+
+ul{
+    text-decoration: none;
+}
+.footer_i{
+    color: white;
+}
+.links{
+    justify-content: center;
+    display: grid;
+
+}
+.footer_link{
+    margin-left: 5px;
+}
 @media(max-width:767px){
     #div_logo{
         margin-top: 10px;
