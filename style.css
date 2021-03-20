@@ -188,17 +188,19 @@
   justify-content: center; }
 
 ul {
-  text-decoration: none; }
+  list-style-type: none;
+  margin-top: 8px; }
 
 .footer_i {
-  color: white; }
+  color: white;
+  margin-right: 8px; }
 
 .links {
   justify-content: center;
   display: grid; }
 
-.footer_link {
-  margin-left: 5px; }
+.footer_text {
+  color: white; }
 
 @media (max-width: 767px) {
   #div_logo {
