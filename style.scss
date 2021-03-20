@@ -3,8 +3,8 @@ $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $third_color:#99E2D0;
 
-/* booton colors*/
 
+/* Index.html */
 
 /* explorer button*/
 .explorer_button {
@@ -136,75 +136,6 @@ background-image: linear-gradient($primary-color, $secondary-color);
     background-repeat: no-repeat;
     transition: max-height 0.25s ease-in;
 }
-/*
-.wrapp{
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
-    margin-right: 10px;
- 
-}
-
-.heart {
-    color: red;
-    background-color: currentColor;
-    display: inline-block;
-    height: 25px;
-    margin: 0 10px;
-    position: relative;
-    top: 0;
-    transform: rotate(-45deg);
-    position: absolute; 
-    left: 45%; top: 45%;
-    width: 25px;
-  }
-  
-  .heart::before,
-  .heart::after {
-    content: "";
-    background-color: currentColor;
-    border-radius: 50%;
-    height: 25px;
-    position: absolute;
-    width: 25px;
-  }
-  
-  .heart:before {
-    top: -25px;
-    left: 0;
-
-    
-.hart_icon{
-    
-    margin-top:10px ;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-}
-.hart_icon:hover{
-    background: url(img/violethart.png);
-    background-repeat: no-repeat;
-    transition: max-height 0.25s ease-in;
-}
-.heart{margin-top:10px ;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 30px;
-    height: 30px;
-  transition: max-height 0.15s ease-out;
-  overflow: hidden;
-  background: url("img/iconmonstr-heart-thin.svg") no-repeat;
-  padding: 50px;
-}
-.heart:hover {
-    background: url("https://img.icons8.com/officexs/32/000000/like.png")
-      no-repeat;
-    max-height: 500px;
-    transition: max-height 0.25s ease-in;
-  }
-*/
 
 /* Footer section */
 .footer{
@@ -362,4 +293,44 @@ ul{
             background-color:#f5f5f0 
         }
         
+}
+
+
+/*menuPalette.html*/
+/*arrow and logo*/
+.logo-wrapp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-align: center;
+}
+#flash{
+    margin-top: 5px;
+}
+.top_img{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+    margin-top: 20px;
+}
+.img_restaurent{
+    height: 15rem;
+    width: 50rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    }
+
+@media(max-width:767px){
+    #flash{
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .img_restaurent{
+        height: 8rem;
+        width: 15rem;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+        }
 }
