@@ -1,0 +1,96 @@
+$font-size : 11px 12px 13px 14px 18px 24px;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$third_color:#99E2D0;
+
+
+
+
+/*menuPalette.html*/
+/*arrow and logo*/
+.logo-wrapp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-align: center;
+}
+#flash{
+    margin-top: 5px;
+}
+.top_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.img_restaurent{
+    height: 15rem;
+    width: 50rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    }
+    h5{
+        font-weight: bold;
+    }
+    .heart_1{
+        float: right;
+    }
+    .button_group{
+        font-size:nth($font-size,2);
+        padding: 20px;
+        border-radius: 20px;
+       background-color: white;
+        margin-bottom: 10px;
+        box-shadow: 2px 3px 3px #ddd;
+               
+        }
+        .btn_function{
+            margin-left: 10px;
+            color: black;
+        }
+        .entree_wrapper{
+            background-color:#f5f5f0 ;
+            width:25%;
+            margin-left: 10px;
+            padding: 10px 0 0 10px;
+            border-radius: 15px;
+        }
+        .plats_wrapper{
+            background-color:#f5f5f0 ;
+            width:25%;
+            margin-left: 10px;
+            padding: 10px 0 0 10px;
+            border-radius: 15px;
+        }
+        .desert_wrapper{
+            background-color:#f5f5f0 ;
+            width:25%;
+            margin-left: 10px;
+            padding: 10px 0 0 10px;
+            border-radius: 15px;
+        }
+        .mainwrapper{
+            display: flex;
+        }
+@media(max-width:767px){
+    #flash{
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .img_restaurent{
+        height: 8rem;
+        width: 100%;
+        object-fit: cover;
+       
+        }
+        .entree_wrapper{
+            background-color:#f5f5f0 ;
+            width: 100%;
+        }
+        .button_group{
+            
+           width: 80%;
+             }
+}
