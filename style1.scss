@@ -42,18 +42,30 @@ $textfont:'Roboto', sans-serif;
     }
     .button_group{
         font-size:nth($font-size,3);
-        padding: 20px;
+        padding: 10px;
         border-radius: 20px;
        background-color: white;
         margin-bottom: 10px;
         box-shadow: 2px 3px 3px #ddd;
         font-family: $textfont;
-               
+           text-align: left;    
         }
+        .entree_text{
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        /*animation button*/
+.box{
+
+}
+
         .btn_function{
             margin-left: 10px;
             color: black;
         }
+        /*Entrees section*/
         .entree_wrapper{
             background-color:#f5f5f0 ;
             width:25%;
@@ -61,6 +73,7 @@ $textfont:'Roboto', sans-serif;
             padding: 10px 0 0 10px;
             border-radius: 15px;
         }
+        /*plat section*/
         .plats_wrapper{
             background-color:#f5f5f0 ;
             width:25%;
@@ -68,6 +81,11 @@ $textfont:'Roboto', sans-serif;
             padding: 10px 0 0 10px;
             border-radius: 15px;
         }
+        .plat_title{
+            padding-top: 20px;
+        
+        }
+        /*dessert section*/
         .desert_wrapper{
             background-color:#f5f5f0 ;
             width:25%;
@@ -81,13 +99,49 @@ $textfont:'Roboto', sans-serif;
         }
 
         .command_button {
-    
+    display: grid;
+    justify-items: center;
             padding: 8px;
+            width:130px;
+            margin-top: 20px;
             margin-bottom: 40px;
             border-radius: 20px;
             font-size:nth($font-size,1);
             background-image: linear-gradient($primary-color, $secondary-color);
             font-family: $textfont;
+            }
+/* Footer section */
+.footer{
+    background-color:#424224 ;
+    
+}
+            #footer_logo{
+                margin-top: 10px;
+                padding-top: 20px;
+                display: grid;
+            justify-content: center;
+            }
+            
+            
+            ul{
+                list-style-type:none;
+                margin-top: 8px;
+                
+            }
+            .footer_i{
+                color: white;
+                margin-right: 8px;
+            }
+            .links{
+                justify-content: center;
+                display: grid;
+                font-family: $textfont;
+            
+            }
+            
+            .footer_text{
+                color: white;
+                font-family: $textfont;
             }
 @media(max-width:767px){
     #flash{
