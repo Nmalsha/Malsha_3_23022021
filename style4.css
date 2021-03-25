@@ -65,6 +65,9 @@ h5 {
   justify-items: left;
   padding-top: 25px; }
 
+.btn_wrappe {
+  display: flex; }
+
 /*animation button*/
 .btn_function {
   margin-left: 10px;
@@ -166,4 +169,4 @@ ul {
   .desert_wrapper {
     width: 100%; } }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style4.css.map */
