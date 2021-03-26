@@ -67,7 +67,7 @@ $textfont:'Roboto', sans-serif;
             border-radius: 0 20px 20px 0;
                 justify-items: left;
 padding-top: 25px;
-            
+            transition: all 450ms ease-in-out;
             }
 .box{
     width: 60px;
@@ -76,16 +76,42 @@ padding-top: 25px;
     border-radius: 0 20px 20px 0;
     justify-items: left;
     padding-top: 25px;
+    transition: all 450ms ease-in-out;
 }
 
 .btn_wrappe{
     display: flex;
 }
-
-
+.check{
+    border-radius: 50%;
+background: green;
+display: flex;
+justify-content: center;
+width: 30px;
+height: 30px;
+transform: rotate(-180deg);
+transition: all 450ms ease-in-out;
+}
+i::before{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;  
+}
 
         /*animation button*/
-
+.btn_wrappe{
+    &:hover , &:focus , &:active{
+        .value{
+            transform: tralslateX(-65px);
+        }
+        .box{
+            transform: tralslateX(-65px);
+        }
+        .check{
+transform: rotate(0deg);
+        }
+    }
+}
 
         .btn_function{
             margin-left: 10px;
