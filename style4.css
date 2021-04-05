@@ -62,8 +62,19 @@ h5 {
   height: 59px;
   background-color: red;
   border-radius: 0 20px 20px 0;
-  justify-items: left;
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-top: 18px;
+  padding-left: 21px; }
+
+.fa-check {
+  font-weight: 600;
+  font-size: 14px; }
+
+.check {
+  text-align: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 25px; }
 
 .btn_wrappe {
   display: flex; }

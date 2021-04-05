@@ -52,7 +52,8 @@ h5 {
   display: block;
   width: 50px;
   height: 59px;
-  background-color: green;
+  background-color: white;
+  font-weight: bold;
   border-radius: 0 20px 20px 0;
   justify-items: left;
   padding-top: 25px;
@@ -63,36 +64,74 @@ h5 {
   height: 59px;
   background-color: red;
   border-radius: 0 20px 20px 0;
-  justify-items: left;
   padding-top: 25px;
+  padding-top: 25px;
+  padding-top: 18px;
+  padding-left: 19px;
   transition: all 450ms ease-in-out; }
+
+.fa-check {
+  font-weight: 600;
+  font-size: 14px; }
+
+.check {
+  text-align: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 25px; }
 
 .btn_wrappe {
   display: flex; }
 
-.check {
-  border-radius: 50%;
-  background: green;
-  display: flex;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  transform: rotate(-180deg);
-  transition: all 450ms ease-in-out; }
-
-i::before {
-  color: white;
-  font-weight: bold;
-  font-size: 13px; }
-
 /*animation button*/
-.btn_wrappe:hover .value, .btn_wrappe:focus .value, .btn_wrappe:active .value {
-  transform: tralslateX(-65px); }
-.btn_wrappe:hover .box, .btn_wrappe:focus .box, .btn_wrappe:active .box {
-  transform: tralslateX(-65px); }
-.btn_wrappe:hover .check, .btn_wrappe:focus .check, .btn_wrappe:active .check {
-  transform: rotate(0deg); }
+.value:hover {
+  transform: translateX(0, 100px); }
 
+/*
+.check{
+    border-radius: 50%;
+background: green;
+display: flex;
+justify-content: center;
+width: 30px;
+height: 30px;
+transform: rotate(-180deg);
+transition: all 450ms ease-in-out;
+}
+i::before{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;  
+}
+*/
+ /*
+.box::before
+
+{
+content: '';
+position: absolute;
+top:0;
+left:0;
+bottom: 0;
+right:0;
+background-color: blue;
+}
+
+       
+.btn_wrappe{
+    &:hover , &:focus , &:active{
+        .value{
+            transform: tralslateX(-65px);
+        }
+        .box{
+            transform: tralslateX(-65px);
+        }
+        .check{
+transform: rotate(0deg);
+        }
+    }
+}
+*/
 .btn_function {
   margin-left: 10px;
   color: black; }
