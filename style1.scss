@@ -51,13 +51,19 @@ $textfont:'Roboto', sans-serif;
         box-shadow: 2px 3px 3px #ddd;
         font-family: $textfont;
            text-align: left;    
-           width: 65%;
+           width: 60%;
         }
         .entree_text{
             font-weight: bold;
             overflow: hidden;
             white-space: nowrap;
         }
+        .second_text{
+            overflow: hidden;
+            white-space: nowrap;
+        
+    }
+        /*
         .value{
             display: block;
             width: 50px;
@@ -68,8 +74,9 @@ $textfont:'Roboto', sans-serif;
                 justify-items: left;
             padding-top: 25px;
             transition: all 450ms ease-in-out;
-            }
-.box{
+            }*/
+
+            .box{
     width: 60px;
     height: 59px;
     background-color: red;
@@ -78,7 +85,7 @@ $textfont:'Roboto', sans-serif;
     padding-top: 25px;
     padding-top: 18px;
     padding-left: 19px;
-    transition: all 450ms ease-in-out;
+    visibility: hidden; 
 }
 .fa-check{
     font-weight: 600;
@@ -92,15 +99,71 @@ width: 25px;
 }
 .btn_wrappe{
     display: flex;
+   
 }
+.box_value{
+    background-color: greenyellow;
+    display: flex;
+    width: 65px;
+    height: 59px;
+    font-weight: bold;
+    border-radius: 0 20px 20px 0;
+    padding-top: 25px;
+    text-align: right; 
 
+&:hover{
+    animation: valueBox  1s infinite; 
+    transform-origin: left;
+       
+    animation-iteration-count: 1;
+}
+       
+}
 /*animation button*/
-.value:hover{
-    transform: translateX(0,100px);
+@keyframes valueBox{
+    
+      0% {
+        transform:translate (-50px 0px);
+      }
+      20% {
+        transform: translate(-30px, 0);
+      }
+      40% {
+        transform: translate(-20px, 0);
+      }
+      60% {
+        transform: translate(-15px, 0);
+      }
+      80% {
+        transform: translate(-7px, 0);
+      }
+      100% {
+        transform: translate(1px, 0);
+      }
+    }
+
+
+/*
+.box_value{
+    &:hover + .scale_sizebtn{
+transform: translateX(0.5);
 }
 
+}
+.scale_sizebtn{
+    transition: transform 330ms ease-in-out;
+}
+.fa-check{
+    transform: rotate(1turn);
+}
 
-
+.box_value:hover{
+    transform: translate(100px,0);
+    
+    transition: transform 330ms ease-in-out;
+    
+}
+*/
 /*
 .check{
     border-radius: 50%;
