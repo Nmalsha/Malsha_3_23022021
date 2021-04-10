@@ -51,7 +51,7 @@ $textfont:'Roboto', sans-serif;
         box-shadow: 2px 3px 3px #ddd;
         font-family: $textfont;
            text-align: left;    
-           width: 60%;
+           width: 65%;
         }
         .entree_text{
             font-weight: bold;
@@ -79,13 +79,15 @@ $textfont:'Roboto', sans-serif;
             .box{
     width: 60px;
     height: 59px;
-    background-color: red;
+    background-color: #99e2d0;
     border-radius: 0 20px 20px 0;
     padding-top: 25px;
     padding-top: 25px;
     padding-top: 18px;
     padding-left: 19px;
-    visibility: hidden; 
+    margin-left: -10px;
+    z-index: -1;
+    
 }
 .fa-check{
     font-weight: 600;
@@ -96,13 +98,38 @@ font-size: 14px;
     background-color: white;
 border-radius: 100%;
 width: 25px;
+transition: transform 0.5s ;
+animation-fill-mode: both;
 }
+
 .btn_wrappe{
     display: flex;
-   
+    overflow: hidden;
+    white-space: nowrap;
+    
+    &:hover {
+        .box_value{
+            animation: valueBox  3s ; 
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            transition-delay: 1s;
+    }
+    .box{
+        z-index: 1;
+        animation: Box  3s ; 
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+          
+    }
+    .check{
+        transform:rotate(360deg) ;
+        
+    }
+
+    }
 }
 .box_value{
-    background-color: greenyellow;
+    background-color: white;
     display: flex;
     width: 65px;
     height: 59px;
@@ -110,20 +137,14 @@ width: 25px;
     border-radius: 0 20px 20px 0;
     padding-top: 25px;
     text-align: right; 
-
-&:hover{
-    animation: valueBox  1s infinite; 
-    transform-origin: left;
-       
-    animation-iteration-count: 1;
-}
-       
+z-index: 1;
+   
 }
 /*animation button*/
 @keyframes valueBox{
     
       0% {
-        transform:translate (-50px 0px);
+        transform:translate (50px 0px);
       }
       20% {
         transform: translate(-30px, 0);
@@ -135,13 +156,35 @@ width: 25px;
         transform: translate(-15px, 0);
       }
       80% {
-        transform: translate(-7px, 0);
+        transform: translate(-10px, 0);
       }
       100% {
         transform: translate(1px, 0);
       }
     }
-
+    @keyframes Box{
+    
+        0% {
+          transform:translate (70px 0px);
+        }
+        20% {
+          transform: translate(-60px, 0);
+        }
+        40% {
+          transform: translate(-40px, 0);
+        }
+        60% {
+          transform: translate(-20px, 0);
+        }
+        80% {
+          transform: translate(-10px, 0);
+        }
+        100% {
+          transform: translate(1px, 0);
+        }
+        
+        
+      }
 
 /*
 .box_value{
