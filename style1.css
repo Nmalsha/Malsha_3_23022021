@@ -21,7 +21,7 @@
   height: 15rem;
   width: 50rem;
   object-fit: cover;
-  border-radius: 10px 10px 0px 0px; }
+  border-radius: 10px; }
 
 h5 {
   font-weight: bold;
@@ -31,17 +31,21 @@ h5 {
   float: right;
   margin-right: 20px; }
 
+.mainwrapper {
+  margin-top: 20px; }
+
 /*button group*/
 .button_group {
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
   border-radius: 20px 0 0 20px;
   background-color: white;
   margin-bottom: 10px;
-  box-shadow: 2px 3px 3px #ddd;
   font-family: "Roboto", sans-serif;
   text-align: left;
-  width: 65%; }
+  width: calc(100%/5 * 3);
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .entree_text {
   font-weight: bold;
@@ -52,21 +56,9 @@ h5 {
   overflow: hidden;
   white-space: nowrap; }
 
-/*
-.value{
-    display: block;
-    width: 50px;
-    height: 59px;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 0 20px 20px 0;
-        justify-items: left;
-    padding-top: 25px;
-    transition: all 450ms ease-in-out;
-    }*/
 .box {
-  width: 60px;
-  height: 59px;
+  width: calc(100%/4);
+  height: 69px;
   background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
   padding-top: 25px;
@@ -74,7 +66,9 @@ h5 {
   padding-top: 18px;
   padding-left: 19px;
   margin-left: -10px;
-  z-index: -1; }
+  visibility: hidden;
+  position: absolute;
+  left: 100%; }
 
 .fa-check {
   font-weight: 600;
@@ -91,16 +85,24 @@ h5 {
 .btn_wrappe {
   display: flex;
   overflow: hidden;
-  white-space: nowrap; }
+  white-space: nowrap;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 1rem;
+  background-color: white;
+  z-index: 1;
+  margin-right: 20px; }
+  .btn_wrappe:hover .button_group {
+    width: 50%; }
   .btn_wrappe:hover .box_value {
-    animation: valueBox 3s;
-    animation-timing-function: linear;
+    animation: valueBox 2s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    transition-delay: 1s; }
+    transition-delay: 0s; }
   .btn_wrappe:hover .box {
-    z-index: 1;
-    animation: Box 3s;
-    animation-timing-function: linear;
+    visibility: visible;
+    animation: Box 2s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1; }
   .btn_wrappe:hover .check {
     transform: rotate(360deg); }
@@ -108,31 +110,31 @@ h5 {
 .box_value {
   background-color: white;
   display: flex;
-  width: 65px;
+  width: calc(100%/5);
+  flex: 0 0 auto;
   height: 59px;
   font-weight: bold;
   border-radius: 0 20px 20px 0;
   padding-top: 25px;
-  text-align: right;
-  z-index: 1; }
+  text-align: right; }
 
 /*animation button*/
 @keyframes valueBox {
   0% {
-    transform: translate 50px 0px; }
+    transform: translate -80px 0px; }
   20% {
-    transform: translate(-30px, 0); }
+    transform: translate(-60px, 0); }
   40% {
-    transform: translate(-20px, 0); }
+    transform: translate(-40px, 0); }
   60% {
-    transform: translate(-15px, 0); }
+    transform: translate(-25px, 0); }
   80% {
     transform: translate(-10px, 0); }
   100% {
     transform: translate(1px, 0); } }
 @keyframes Box {
   0% {
-    transform: translate 70px 0px; }
+    transform: translate -80px 0px; }
   20% {
     transform: translate(-60px, 0); }
   40% {
@@ -143,81 +145,18 @@ h5 {
     transform: translate(-10px, 0); }
   100% {
     transform: translate(1px, 0); } }
-/*
-.box_value{
-    &:hover + .scale_sizebtn{
-transform: translateX(0.5);
-}
-
-}
-.scale_sizebtn{
-    transition: transform 330ms ease-in-out;
-}
-.fa-check{
-    transform: rotate(1turn);
-}
-
-.box_value:hover{
-    transform: translate(100px,0);
-    
-    transition: transform 330ms ease-in-out;
-    
-}
-*/
-/*
-.check{
-    border-radius: 50%;
-background: green;
-display: flex;
-justify-content: center;
-width: 30px;
-height: 30px;
-transform: rotate(-180deg);
-transition: all 450ms ease-in-out;
-}
-i::before{
-    color: white;
-    font-weight: bold;
-    font-size: 13px;  
-}
-*/
- /*
-.box::before
-
-{
-content: '';
-position: absolute;
-top:0;
-left:0;
-bottom: 0;
-right:0;
-background-color: blue;
-}
-
-       
-.btn_wrappe{
-    &:hover , &:focus , &:active{
-        .value{
-            transform: tralslateX(-65px);
-        }
-        .box{
-            transform: tralslateX(-65px);
-        }
-        .check{
-transform: rotate(0deg);
-        }
-    }
-}
-*/
 .btn_function {
   margin-left: 10px;
-  color: black; }
+  color: black;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
 
 /*Entrees section*/
 .entree_wrapper {
   background-color: #f5f5f0;
   width: 25%;
-  margin-left: 10px;
   padding: 10px 0 0 10px;
   border-radius: 15px; }
 
@@ -293,9 +232,13 @@ ul {
     width: 100%;
     object-fit: cover; }
 
+  .mainwrapper {
+    margin-top: -10px; }
+
   .entree_wrapper {
     background-color: #f5f5f0;
-    width: 100%; }
+    width: 100%;
+    border-radius: 25px; }
 
   .button_group {
     width: 80%; }

@@ -1,82 +1,21 @@
 /* Index.html */
-.logo {
-  width: 100%; }
-
-#div_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  max-width: 50%; }
-
-#presentation {
-  text-align: center;
-  font-family: "Roboto", sans-serif; }
-
 /* explorer button*/
 .explorer_button {
-  font-family: "Roboto", sans-serif;
   padding: 8px;
   margin-bottom: 40px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 11px;
   background-image: linear-gradient(#9356DC, #FF79DA);
   font-family: "Roboto", sans-serif; }
 
 /* first wrapper*/
 .wrappe {
   background-color: #f5f5f0;
-  padding-top: 20px;
-  display: grid;
-  justify-content: center; }
+  padding-top: 20px; }
 
 /* functionnement button section*/
-#div_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  max-width: 50%; }
-
-.logo {
-  width: 250%;
-  margin-left: -40px; }
-
-.icon {
-  padding: 10px;
-  min-width: 40px;
-  margin-left: 130px;
-  margin-top: 5px; }
-
-.input-field {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  font-size: 13px;
-  opacity: 0.7;
-  border: none;
-  background-color: #e0e0d1;
-  box-shadow: 20px; }
-
-.input-icons i {
-  position: absolute; }
-
-#text1 {
-  margin-top: 25px;
-  font-size: 24px;
-  font-weight: bold;
-  align-items: center; }
-
-#text2 {
-  font-size: 18px;
-  opacity: 0.7; }
-
 .Fonctionnement {
-  display: flex;
-  margin-top: 15px;
-  justify-content: space-around;
-  margin-bottom: 20px; }
-
-.txt_function {
-  margin-left: 20px; }
+  margin-left: 15px; }
 
 .button_group {
   font-size: 12px;
@@ -85,7 +24,8 @@
   background-color: #f5f5f0;
   margin-bottom: 10px;
   box-shadow: 2px 3px 3px #ddd;
-  width: 25%; }
+  width: 80%;
+  font-family: "Roboto", sans-serif; }
 
 .cercle_1 {
   background-color: #9356DC;
@@ -108,9 +48,6 @@
   color: black;
   font-family: "Roboto", sans-serif; }
 
-.button_group a {
-  text-decoration: none; }
-
 /* restaurent  section*/
 .wrapper_restaurent {
   display: grid;
@@ -128,11 +65,9 @@
   border-radius: 10px;
   width: 15rem;
   display: flex;
-  flex-wrap: wrap;
-  background: white; }
+  flex-wrap: wrap; }
 
 .cardtext_container {
-  width: 100%;
   display: flex;
   justify-content: space-between; }
 
@@ -151,11 +86,6 @@
 .text4 {
   font-size: 11px;
   font-family: "Roboto", sans-serif; }
-
-.wrapper_restaurent {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f5f0; }
 
 .like {
   position: relative; }
@@ -211,19 +141,25 @@ ul {
   color: white;
   font-family: "Roboto", sans-serif; }
 
-/* mobile */
 @media (max-width: 767px) {
   #div_logo {
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;
-    max-width: 50%; }
+    text-align: center; }
 
   .logo {
+    height: 1.5rem;
+    align-items: center;
     font-size: 11px; }
 
+  .input-icons i {
+    position: absolute; }
+
   .icon {
-    margin-left: 20px; }
+    padding: 10px;
+    min-width: 40px;
+    margin-left: 20px;
+    margin-top: 5px; }
 
   .input-field {
     width: 100%;
@@ -258,25 +194,74 @@ ul {
   .text_res {
     font-weight: bold;
     margin-left: 20px;
-    font-family: "Roboto", sans-serif; }
-
-  #btn_section {
-    flex-direction: column;
-    width: 100%;
+    font-family: "Roboto", sans-serif; } }
+@media (min-width: 768px) {
+  .wrappe {
+    background-color: #f5f5f0;
+    padding-top: 20px;
     display: grid;
-    justify-items: center; }
+    justify-content: center; }
 
-  .button_group {
-    width: 250px; }
+  .logo {
+    width: 250%;
+    margin-left: -40px; }
 
-  .wrapper_restaurent {
-    flex-direction: column;
+  .icon {
+    padding: 10px;
+    min-width: 40px;
+    margin-left: 20px;
+    margin-top: 5px; }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+    border: none;
+    background-color: #e0e0d1;
+    box-shadow: 20px; }
+
+  .input-icon {
+    background-color: #e0e0d1;
+    margin-left: -60px; }
+
+  .input-icons i {
+    position: absolute; }
+
+  #text1 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
     align-items: center; }
 
-  .card {
-    margin-bottom: 15px; } }
-/* tablet */
-@media (min-width: 768px) and (max-width: 992px) {
+  #text2 {
+    font-size: 18px;
+    opacity: 0.7; }
+
+  .Fonctionnement {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+    margin-bottom: 20px; }
+
+  .txt_function {
+    margin-left: 20px; }
+
+  .button_group {
+    font-size: 12px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f5f5f0;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 3px #ddd;
+    width: 25%; }
+
+  .wrapper_restaurent {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f0; }
+
   .text_res {
     background-color: #f5f5f0; } }
 
