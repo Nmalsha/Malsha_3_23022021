@@ -102,11 +102,12 @@ h5 {
     animation: valueBox 2s;
     animation-timing-function: ease-in-out;
     transition-delay: 0s;
-    animation-fill-mode: forwards; }
+    animation-fill-mode: both; }
   .btn_wrappe:hover .box {
     visibility: visible;
     animation: Box 2s;
-    animation-timing-function: ease-in-out; }
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; }
   .btn_wrappe:hover .check {
     transform: rotate(360deg); }
 

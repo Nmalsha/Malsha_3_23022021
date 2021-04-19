@@ -7,6 +7,7 @@ $textfont:'Roboto', sans-serif;
 $firstitemloaddelay:500ms;
 $seconditemloaddelay:800ms;
 $thirditemloaddelay:1100ms;
+$forthitemloaddelay:1400ms;
 body{
     margin: 0;
 
@@ -125,7 +126,7 @@ margin-bottom: 10px;
             animation-timing-function: ease-in-out;
             
             transition-delay: 0s;
-            animation-fill-mode: forwards;
+            animation-fill-mode: both;
 
          
     }
@@ -133,7 +134,7 @@ margin-bottom: 10px;
         visibility: visible;
         animation: Box  2s ; 
             animation-timing-function: ease-in-out;
-            
+            animation-fill-mode: both;
           
     }
     .check{
@@ -154,6 +155,10 @@ margin-bottom: 10px;
 }
 .third_btn{
     animation: btn-wrappe-load $thirditemloaddelay ease-in-out;
+    transform-origin: bottom;
+}
+.forth_btn{
+    animation: btn-wrappe-load $forthitemloaddelay ease-in-out;
     transform-origin: bottom;
 }
 .box_value{
@@ -207,6 +212,7 @@ font-size: nth($font-size,5);
         transform: translate(1px, 0);
       }
     }
+   
     
     @keyframes Box{
     
