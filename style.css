@@ -106,7 +106,8 @@
 .btn_text {
   margin-left: 10px;
   color: black;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 13px; }
 
 .button_group a {
   text-decoration: none; }

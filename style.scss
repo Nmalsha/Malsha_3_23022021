@@ -126,6 +126,7 @@ font-family: $textfont;
         margin-left: 10px;
         color: black;
         font-family: $textfont;
+        font-size:nth($font-size,3)
     }
     .button_group a{
         text-decoration: none;
