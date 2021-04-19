@@ -4,7 +4,9 @@ $secondary-color:#FF79DA;
 $third_color:#99E2D0;
 $titlefont :'Shrikhand', cursive;
 $textfont:'Roboto', sans-serif;
-
+$firstitemloaddelay:500ms;
+$seconditemloaddelay:800ms;
+$thirditemloaddelay:1100ms;
 body{
     margin: 0;
 
@@ -112,6 +114,7 @@ z-index: 1;
 margin-right: 20px;
 width: 90%;
 margin-bottom: 10px;
+
     &:hover {
         .button_group{
             width: 50%;
@@ -120,9 +123,9 @@ margin-bottom: 10px;
             
             animation: valueBox  2s ; 
             animation-timing-function: ease-in-out;
-            animation-iteration-count: 1;
-            transition-delay: 0s;
             
+            transition-delay: 0s;
+            animation-fill-mode: forwards;
 
          
     }
@@ -130,7 +133,7 @@ margin-bottom: 10px;
         visibility: visible;
         animation: Box  2s ; 
             animation-timing-function: ease-in-out;
-            animation-iteration-count: 1;
+            
           
     }
     .check{
@@ -139,6 +142,19 @@ margin-bottom: 10px;
     }
 
     }
+}
+.first_btn{
+    animation: btn-wrappe-load $firstitemloaddelay ease-in-out;
+    transform-origin: bottom;
+    
+}
+.second_btn{
+    animation: btn-wrappe-load $seconditemloaddelay ease-in-out;
+    transform-origin: bottom;
+}
+.third_btn{
+    animation: btn-wrappe-load $thirditemloaddelay ease-in-out;
+    transform-origin: bottom;
 }
 .box_value{
     background-color: white;
@@ -191,6 +207,7 @@ font-size: nth($font-size,5);
         transform: translate(1px, 0);
       }
     }
+    
     @keyframes Box{
     
         0% {
@@ -214,6 +231,7 @@ font-size: nth($font-size,5);
         
         
       }
+     
 
 
         .btn_function{
@@ -232,6 +250,22 @@ white-space: nowrap;
             padding: 10px 0 0 10px;
             border-radius: 15px;
         }
+
+
+        /*button wrappe animation*/
+@keyframes btn-wrappe-load{
+    0%{
+        transform:translateY(-20px) ;
+        opacity: 0;
+    }
+   
+    100%{
+        transform:translateY(0px) ;
+        opacity: 1;
+    }
+}
+
+
         /*plat section*/
         .plats_wrapper{
             background-color:#f5f5f0 ;
