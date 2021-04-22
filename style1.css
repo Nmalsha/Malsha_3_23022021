@@ -9,6 +9,9 @@ body {
   margin-top: 25px;
   text-align: center; }
 
+.logo-wrapp i {
+  color: black; }
+
 #flash {
   margin-top: 5px; }
 
@@ -123,6 +126,10 @@ h5 {
   animation: btn-wrappe-load 1100ms ease-in-out;
   transform-origin: bottom; }
 
+.forth_btn {
+  animation: btn-wrappe-load 1400ms ease-in-out;
+  transform-origin: bottom; }
+
 .box_value {
   background-color: white;
   display: flex;
@@ -139,7 +146,10 @@ a {
 .main_text {
   font-weight: bold;
   font-family: "Shrikhand", cursive;
-  font-size: 18px; }
+  font-size: 24px;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between; }
 
 .top_text::after {
   display: block;
@@ -232,13 +242,15 @@ a {
   margin-top: 20px;
   margin-bottom: 40px;
   border-radius: 20px;
-  font-size: 11px;
+  font-size: 13px;
   background-image: linear-gradient(#9356DC, #FF79DA);
   font-family: "Roboto", sans-serif; }
+  .command_button:hover {
+    transform: scale(1.4); }
 
 /* Footer section */
 .footer {
-  background-color: #424224;
+  background-color: #353535;
   width: 100%; }
 
 #footer_logo {
@@ -258,7 +270,9 @@ ul {
 .links {
   justify-content: center;
   display: grid;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  margin-top: 20px; }
 
 .footer_text {
   color: white;
@@ -266,8 +280,7 @@ ul {
 
 @media (max-width: 767px) {
   #flash {
-    margin-top: 5px;
-    margin-left: 30px; }
+    margin-top: 5px; }
 
   .main_text {
     font-size: 24px; }
@@ -276,14 +289,15 @@ ul {
     width: 100%; }
 
   .img_restaurent {
-    height: 8rem;
+    height: 13rem;
     width: 100%;
     object-fit: cover; }
 
   .mainwrapper {
     margin-top: -10px;
     width: 100%;
-    flex-direction: column; }
+    flex-direction: column;
+    background-color: #f5f5f0; }
 
   .entree_wrapper {
     justify-content: center;
@@ -304,6 +318,43 @@ ul {
     justify-content: center;
     display: grid;
     width: 100%;
-    border-radius: 25px; } }
+    border-radius: 25px; }
+
+  #footer_logo {
+    justify-content: left;
+    margin-left: 30px; }
+
+  .links {
+    justify-content: left; } }
+@media (min-width: 768px) and (max-width: 1028px) {
+  .mainwrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f0;
+    margin-top: -50px; }
+
+  .img_restaurent {
+    height: 25rem; }
+
+  .entree_wrapper {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    justify-content: center; }
+
+  .plats_wrapper {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    justify-content: center; }
+
+  .desert_wrapper {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    justify-content: center; } }
 
 /*# sourceMappingURL=style1.css.map */
