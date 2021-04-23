@@ -24,6 +24,20 @@ body{
 }
 .logo-wrapp i{
     color: black;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.logo-wrapp a{
+    align-items: center;
+display: grid;
+}
+#div_logo{
+    
+    text-align: center;
+    max-width: 100%;
+    font-family: $titlefont;
+    font-size: 1.5rem;
 }
 #flash{
     margin-top: 5px;
@@ -105,7 +119,10 @@ width: 25px;
 transition: transform 0.5s ;
 animation-fill-mode: both;
 }
-
+.main_btn_wrap{
+    display: grid;
+justify-items: center;
+}
 .btn_wrappe{
     display: flex;
     overflow: hidden;
@@ -115,7 +132,7 @@ position: relative;
 border-radius: 1rem;
 background-color: white;
 z-index: 1;
-margin-right: 20px;
+
 width: 90%;
 margin-bottom: 10px;
 
@@ -125,19 +142,19 @@ margin-bottom: 10px;
         }
         .box_value{
             
-            animation: valueBox  2s ; 
-            animation-timing-function: ease-in-out;
-            
+            animation: valueBox1  0.5s ; 
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
             transition-delay: 0s;
-            animation-fill-mode: both;
-
+            
          
     }
     .box{
         visibility: visible;
-        animation: Box  2s ; 
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: both;
+        animation: Box1  0.5s ; 
+            animation-timing-function:linear;
+            animation-fill-mode: forwards;
+            
           
     }
     .check{
@@ -147,6 +164,33 @@ margin-bottom: 10px;
 
     }
 }
+
+/*backword animation*/
+.btn_wrappe:not(:hover){
+    .button_group{
+        width: 100%;
+    }
+    .box_value{
+            
+        animation: valueBox2  0.5s ; 
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        
+}
+.box{
+    visibility: visible;
+    animation: Box2  0.5s ; 
+        animation-timing-function:linear;
+        animation-fill-mode: backwards;
+        
+      
+}
+.check{
+    transform:rotate(0deg) ;
+    
+}
+}
+
 .first_btn{
     animation: btn-wrappe-load $firstitemloaddelay ease-in-out;
     transform-origin: bottom;
@@ -220,7 +264,29 @@ justify-content: space-between;
         transform: translate(1px, 0);
       }
     }
-   
+    @keyframes valueBox1{
+    
+        from {
+          transform:translate (-80px 0px);
+        }
+        to {
+          transform: translate(-60px, 0);
+        }
+        
+       
+      }
+    
+      @keyframes valueBox2{
+    
+        from {
+          transform:translate (-90px 0px);
+        }
+        to {
+          transform: translate(-70px, 0);
+        }
+        
+       
+      }
     
     @keyframes Box{
     
@@ -246,8 +312,24 @@ justify-content: space-between;
         
       }
      
-
-
+      @keyframes Box1{
+    
+        from {
+          transform:translate (-80px 0px);
+        }
+        to{
+          transform: translate(-60px, 0);
+        }
+    }
+    @keyframes Box2{
+    
+        from {
+          transform:translate (-90px 0px);
+        }
+        to{
+          transform: translate(-70px, 0);
+        }
+    }
         .btn_function{
             margin-left: 10px;
             color: black;
@@ -317,7 +399,7 @@ justify-content: center;
             margin-top: 20px;
             margin-bottom: 40px;
             border-radius: 20px;
-            font-size:nth($font-size,3);
+            font-size:nth($font-size,5);
             background-image: linear-gradient($primary-color, $secondary-color);
             font-family: $textfont;
 
@@ -354,7 +436,9 @@ justify-content: center;
                 line-height: 30px;
                 margin-top: 20px;
             }
-            
+            .links li:hover{
+                transform: scale(1.2);
+                }
             .footer_text{
                 color: white;
                 font-family: $textfont;
@@ -362,7 +446,11 @@ justify-content: center;
 @media(max-width:767px){
     #flash{
         margin-top: 5px;
-       
+        height: 120px;
+    }
+    .logo-wrapp{
+        margin-top: 0;
+        height: 90px;
     }
     .main_text{
         font-size: 24px;
@@ -387,6 +475,7 @@ justify-content: center;
 display: grid;
             width: 100%;
             border-radius: 25px;
+            
           
         }
         .button_group{
@@ -431,28 +520,42 @@ background-color: #f5f5f0;
 margin-top: -50px;
     }
     .main_text{
-       
+        justify-content: space-around;
     }
     .img_restaurent{
         height: 25rem;
     }
+    .btn_wrappe{
+        margin-right: 0;
+    }
+    .button_group{
+        font-size: 16px;
+    }
+    .box_value{
+        width: calc(100%/8); 
+        font-size: 16px;
+    }
 .entree_wrapper{
     width: 100%;
-    align-items: center;
-display: grid;
-justify-content: center;
+  padding: 0;
+border-radius: 3rem 3rem 0 0;
+}
+.top_text{
+    margin-left: 20px;
 }
 .plats_wrapper{
     width: 100%;
     align-items: center;
-display: grid;
+
 justify-content: center;
+padding: 0;
 }
 .desert_wrapper{
     width: 100%;
     align-items: center;
-display: grid;
+
 justify-content: center;
+padding: 0;
 }
 
 }

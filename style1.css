@@ -11,6 +11,18 @@ body {
 
 .logo-wrapp i {
   color: black; }
+  .logo-wrapp i:hover {
+    transform: scale(1.2); }
+
+.logo-wrapp a {
+  align-items: center;
+  display: grid; }
+
+#div_logo {
+  text-align: center;
+  max-width: 100%;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem; }
 
 #flash {
   margin-top: 5px; }
@@ -87,6 +99,10 @@ h5 {
   transition: transform 0.5s;
   animation-fill-mode: both; }
 
+.main_btn_wrap {
+  display: grid;
+  justify-items: center; }
+
 .btn_wrappe {
   display: flex;
   overflow: hidden;
@@ -96,23 +112,37 @@ h5 {
   border-radius: 1rem;
   background-color: white;
   z-index: 1;
-  margin-right: 20px;
   width: 90%;
   margin-bottom: 10px; }
   .btn_wrappe:hover .button_group {
     width: 50%; }
   .btn_wrappe:hover .box_value {
-    animation: valueBox 2s;
-    animation-timing-function: ease-in-out;
-    transition-delay: 0s;
-    animation-fill-mode: both; }
+    animation: valueBox1 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition-delay: 0s; }
   .btn_wrappe:hover .box {
     visibility: visible;
-    animation: Box 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both; }
+    animation: Box1 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; }
   .btn_wrappe:hover .check {
     transform: rotate(360deg); }
+
+/*backword animation*/
+.btn_wrappe:not(:hover) .button_group {
+  width: 100%; }
+.btn_wrappe:not(:hover) .box_value {
+  animation: valueBox2 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards; }
+.btn_wrappe:not(:hover) .box {
+  visibility: visible;
+  animation: Box2 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards; }
+.btn_wrappe:not(:hover) .check {
+  transform: rotate(0deg); }
 
 .first_btn {
   animation: btn-wrappe-load 500ms ease-in-out;
@@ -173,6 +203,16 @@ a {
     transform: translate(-10px, 0); }
   100% {
     transform: translate(1px, 0); } }
+@keyframes valueBox1 {
+  from {
+    transform: translate -80px 0px; }
+  to {
+    transform: translate(-60px, 0); } }
+@keyframes valueBox2 {
+  from {
+    transform: translate -90px 0px; }
+  to {
+    transform: translate(-70px, 0); } }
 @keyframes Box {
   0% {
     transform: translate -80px 0px; }
@@ -186,6 +226,16 @@ a {
     transform: translate(-10px, 0); }
   100% {
     transform: translate(1px, 0); } }
+@keyframes Box1 {
+  from {
+    transform: translate -80px 0px; }
+  to {
+    transform: translate(-60px, 0); } }
+@keyframes Box2 {
+  from {
+    transform: translate -90px 0px; }
+  to {
+    transform: translate(-70px, 0); } }
 .btn_function {
   margin-left: 10px;
   color: black;
@@ -242,7 +292,7 @@ a {
   margin-top: 20px;
   margin-bottom: 40px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 18px;
   background-image: linear-gradient(#9356DC, #FF79DA);
   font-family: "Roboto", sans-serif; }
   .command_button:hover {
@@ -274,13 +324,21 @@ ul {
   line-height: 30px;
   margin-top: 20px; }
 
+.links li:hover {
+  transform: scale(1.2); }
+
 .footer_text {
   color: white;
   font-family: "Roboto", sans-serif; }
 
 @media (max-width: 767px) {
   #flash {
-    margin-top: 5px; }
+    margin-top: 5px;
+    height: 120px; }
+
+  .logo-wrapp {
+    margin-top: 0;
+    height: 90px; }
 
   .main_text {
     font-size: 24px; }
@@ -336,25 +394,40 @@ ul {
     background-color: #f5f5f0;
     margin-top: -50px; }
 
+  .main_text {
+    justify-content: space-around; }
+
   .img_restaurent {
     height: 25rem; }
 
+  .btn_wrappe {
+    margin-right: 0; }
+
+  .button_group {
+    font-size: 16px; }
+
+  .box_value {
+    width: calc(100%/8);
+    font-size: 16px; }
+
   .entree_wrapper {
     width: 100%;
-    align-items: center;
-    display: grid;
-    justify-content: center; }
+    padding: 0;
+    border-radius: 3rem 3rem 0 0; }
+
+  .top_text {
+    margin-left: 20px; }
 
   .plats_wrapper {
     width: 100%;
     align-items: center;
-    display: grid;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0; }
 
   .desert_wrapper {
     width: 100%;
     align-items: center;
-    display: grid;
-    justify-content: center; } }
+    justify-content: center;
+    padding: 0; } }
 
 /*# sourceMappingURL=style1.css.map */

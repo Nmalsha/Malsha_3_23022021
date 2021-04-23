@@ -6,7 +6,9 @@ $titlefont :'Shrikhand', cursive;
 $textfont:'Roboto', sans-serif;
 
 /* Index.html */
-
+body{
+    margin: 0;
+}
 .logo{
     width: 100%;
 }
@@ -17,6 +19,30 @@ $textfont:'Roboto', sans-serif;
     font-family: $titlefont;
     font-size: 2.4rem;
 }
+.input-icons{
+    text-align: center;
+background-color: #eaeaea;
+padding: 10px;
+font-size:nth($font-size,3);
+  
+    border: none;
+}
+.input-icons i{
+    font-size: 20px;
+}
+.input-field{
+    padding: 10px;
+text-align: center;
+font-size: 16px;
+border: none;
+background-color: unset;
+}
+.icon { 
+  
+   color: black;
+
+} 
+
 
 #presentation{
     text-align: center;
@@ -50,26 +76,10 @@ font-family: $textfont;
   
 
 
-.icon { 
-    padding: 10px; 
-    min-width: 40px; 
-   color: black;
 
-} 
-.input-field { 
-   width:100%;
-    padding: 10px; 
-    text-align: center; 
-    font-size:nth($font-size,3);
-    opacity: 0.7;
-    border: none;
-    
-    
-   } 
+
    
-   .input-icons i { 
-    position: absolute; 
-} 
+  
 
 #text1{
     margin-top: 25px;
@@ -241,14 +251,17 @@ font-family: $textfont;
     padding-top: 20px;
     display: grid;
 justify-content: center;
+font-family: $titlefont;
+color: white;
 }
 
 
 ul{
     list-style-type:none;
     margin-top: 8px;
-    
+    padding-bottom: 20px;
 }
+
 .footer_i{
     color: white;
     margin-right: 8px;
@@ -258,6 +271,9 @@ ul{
     display: grid;
     font-family: $textfont;
 
+}
+.links li:hover{
+transform: scale(1.2);
 }
 
 .footer_text{
@@ -287,10 +303,10 @@ ul{
     
 } 
 .input-field { 
-    width: 100%; 
+    
     padding: 10px; 
     text-align: center; 
-    font-size:nth($font-size,3);
+    font-size:nth($font-size,4);
     opacity: 0.7;
     border: none;
     
@@ -306,12 +322,12 @@ ul{
 }
 #text1{
     margin-top: 25px;
-    font-size:nth($font-size,4);
+    font-size:nth($font-size,5);
     font-weight: bold;
     font-family: $textfont;
 }
 #text2{
-    font-size:nth($font-size,3);
+    font-size:nth($font-size,4);
     opacity: 0.7;
     font-family: $textfont;
 }
@@ -380,7 +396,16 @@ font-size: 20px;
             margin-top: 20px;
 margin-right: 20px;
         }
-        
+        .text3{
+            
+            font-size:nth($font-size,5);
+            
+        }
+        .text4{
+           
+           font-size:nth($font-size,4);
+          
+       }   
 }
 
 
