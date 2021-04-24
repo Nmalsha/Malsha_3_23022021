@@ -59,11 +59,18 @@ display: grid;
         font-weight: bold;
         font-family: $titlefont;
     }
-    .heart_1{
-        float: right;
-        margin-right: 20px;
-    }
-    .mainwrapper{
+    /* hart animation*/
+
+.icon_linkt{
+    margin-right: 10px;
+margin-top: 10px;
+font-size: 25px;
+&:hover{
+    color:$primary-color; 
+font-weight: 900;
+}
+} 
+.mainwrapper{
         margin-top: 20px;
     }
 
@@ -174,14 +181,14 @@ margin-bottom: 10px;
             
         animation: valueBox2  0.5s ; 
         animation-timing-function: linear;
-        animation-fill-mode: backwards;
+        animation-fill-mode: forwards;
         
 }
 .box{
     visibility: visible;
     animation: Box2  0.5s ; 
         animation-timing-function:linear;
-        animation-fill-mode: backwards;
+        animation-fill-mode: forwards;
         
       
 }

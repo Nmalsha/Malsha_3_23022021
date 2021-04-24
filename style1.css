@@ -44,9 +44,14 @@ h5 {
   font-weight: bold;
   font-family: "Shrikhand", cursive; }
 
-.heart_1 {
-  float: right;
-  margin-right: 20px; }
+/* hart animation*/
+.icon_linkt {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 25px; }
+  .icon_linkt:hover {
+    color: #9356DC;
+    font-weight: 900; }
 
 .mainwrapper {
   margin-top: 20px; }
@@ -135,12 +140,12 @@ h5 {
 .btn_wrappe:not(:hover) .box_value {
   animation: valueBox2 0.5s;
   animation-timing-function: linear;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: forwards; }
 .btn_wrappe:not(:hover) .box {
   visibility: visible;
   animation: Box2 0.5s;
   animation-timing-function: linear;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: forwards; }
 .btn_wrappe:not(:hover) .check {
   transform: rotate(0deg); }
 

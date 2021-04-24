@@ -107,7 +107,7 @@ body {
   margin-left: 10px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 14px; }
+  font-size: 17px; }
 
 .button_group a {
   text-decoration: none; }
@@ -117,7 +117,7 @@ body {
   background-color: #f5f5f0; }
 
 .text_res {
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 20px;
   padding-top: 20px; }
 
@@ -154,11 +154,11 @@ body {
 
 .text3 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif; }
 
 .text4 {
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif; }
 
 .wrapper_restaurent {
@@ -167,32 +167,46 @@ body {
   background-color: #f5f5f0;
   padding-bottom: 30px; }
 
-.like {
-  position: relative; }
+    /*
+    .like{
+        position: relative;
+    }
+    .default_i{
+        z-index: 1;
+        width: 25px;
+}
+    .houver_i{
+        z-index: 2;
+        width: 25px;
+        margin-left: -25px;
+        position: absolute;
+        opacity: 0;
+        margin-top: 2px;
 
-.default_i {
-  z-index: 1;
-  width: 25px; }
+    }
+    .default_i:focus{
+       cursor: alias;
+       opacity: 0;
+}
+.houver_i:focus{
+    opacity: 1;
+   
 
-.houver_i {
-  z-index: 2;
-  width: 25px;
-  margin-left: -25px;
-  position: absolute;
-  opacity: 0;
-  margin-top: 2px; }
-
-.default_i:focus {
-  cursor: alias;
-  opacity: 0; }
-
-.houver_i:focus {
-  opacity: 1; }
-
-.heart_1:hover {
-  background: url(img/canvass.png);
-  background-repeat: no-repeat;
-  transition: max-height 0.25s ease-in; }
+}
+.heart_1:hover{
+    background: url(img/canvass.png);
+    background-repeat: no-repeat;
+    transition: max-height 0.25s ease-in;
+}
+*/
+/* hart animation*/
+.icon_linkt {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 25px; }
+  .icon_linkt:hover {
+    color: #9356DC;
+    font-weight: 900; }
 
 /* Footer section */
 .footer {

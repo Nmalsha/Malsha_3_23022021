@@ -1,4 +1,4 @@
-$font-size : 11px 12px 13px 14px 18px 24px;
+$font-size : 11px 12px 13px 14px 18px 24px 17px 20px;
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $third_color:#99E2D0;
@@ -73,15 +73,7 @@ font-family: $textfont;
 }
 /* functionnement button section*/
 
-  
-
-
-
-
-   
-  
-
-#text1{
+  #text1{
     margin-top: 25px;
     font-size:nth($font-size,6);
     font-weight: bold;
@@ -138,7 +130,7 @@ font-family: $textfont;
         margin-left: 10px;
         color: black;
         font-family: $textfont;
-        font-size:nth($font-size,4)
+        font-size:nth($font-size,7)
     }
     .button_group a{
         text-decoration: none;
@@ -149,7 +141,7 @@ font-family: $textfont;
     background-color:#f5f5f0 
 }
 .text_res{
-    font-size:nth($font-size,5);
+    font-size:nth($font-size,8);
     margin-left: 20px;
     padding-top: 20px;
 }
@@ -196,12 +188,12 @@ font-family: $textfont;
      }
      .text3{
          font-weight: bold;
-         font-size:nth($font-size,4);
+         font-size:nth($font-size,7);
          font-family: $textfont;
      }
      .text4{
         
-        font-size:nth($font-size,3);
+        font-size:nth($font-size,4);
         font-family: $textfont;
     }
     .wrapper_restaurent{
@@ -210,6 +202,8 @@ font-family: $textfont;
         background-color:#f5f5f0 ;
         padding-bottom: 30px;
     }
+
+    /*
     .like{
         position: relative;
     }
@@ -240,7 +234,20 @@ font-family: $textfont;
     background-repeat: no-repeat;
     transition: max-height 0.25s ease-in;
 }
+*/
 
+/* hart animation*/
+
+.icon_linkt{
+    margin-right: 10px;
+margin-top: 10px;
+font-size: 25px;
+&:hover{
+    color:$primary-color; 
+font-weight: 900;
+}
+
+}
 /* Footer section */
 .footer{
     background-color:#353535 ;
