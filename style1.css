@@ -87,7 +87,6 @@ h5 {
   padding-top: 25px;
   padding-top: 18px;
   padding-left: 19px;
-  margin-left: -10px;
   visibility: hidden;
   position: absolute;
   left: 100%; }
@@ -132,7 +131,8 @@ h5 {
     animation-timing-function: linear;
     animation-fill-mode: forwards; }
   .btn_wrappe:hover .check {
-    transform: rotate(360deg); }
+    transform: rotate(360deg);
+    animation-fill-mode: forwards; }
 
 /*backword animation*/
 .btn_wrappe:not(:hover) .button_group {
@@ -140,29 +140,33 @@ h5 {
 .btn_wrappe:not(:hover) .box_value {
   animation: valueBox2 0.5s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards; }
+  animation-direction: reverse; }
 .btn_wrappe:not(:hover) .box {
   visibility: visible;
   animation: Box2 0.5s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards; }
+  animation-direction: reverse; }
 .btn_wrappe:not(:hover) .check {
-  transform: rotate(0deg); }
+  animation-fill-mode: forwards; }
 
 .first_btn {
   animation: btn-wrappe-load 500ms ease-in-out;
+  animation-direction: reverse;
   transform-origin: bottom; }
 
 .second_btn {
   animation: btn-wrappe-load 800ms ease-in-out;
+  animation-direction: reverse;
   transform-origin: bottom; }
 
 .third_btn {
   animation: btn-wrappe-load 1100ms ease-in-out;
+  animation-direction: reverse;
   transform-origin: bottom; }
 
 .forth_btn {
-  animation: btn-wrappe-load 1400ms ease-in-out;
+  animation: btn-wrappe-load1 1400ms ease-in-out;
+  animation-direction: reverse;
   transform-origin: bottom; }
 
 .box_value {
@@ -195,19 +199,29 @@ a {
   background-color: #99e2d0; }
 
 /*animation button*/
-@keyframes valueBox {
-  0% {
-    transform: translate -80px 0px; }
-  20% {
-    transform: translate(-60px, 0); }
-  40% {
-    transform: translate(-40px, 0); }
-  60% {
-    transform: translate(-25px, 0); }
-  80% {
-    transform: translate(-10px, 0); }
-  100% {
-    transform: translate(1px, 0); } }
+/*
+@keyframes valueBox{
+    
+      0% {
+        transform:translate (-80px 0px);
+      }
+      20% {
+        transform: translate(-60px, 0);
+      }
+      40% {
+        transform: translate(-40px, 0);
+      }
+      60% {
+        transform: translate(-25px, 0);
+      }
+      80% {
+        transform: translate(-10px, 0);
+      }
+      100% {
+        transform: translate(1px, 0);
+      }
+    }
+    */
 @keyframes valueBox1 {
   from {
     transform: translate -80px 0px; }
@@ -220,7 +234,7 @@ a {
     transform: translate(-70px, 0); } }
 @keyframes Box {
   0% {
-    transform: translate -80px 0px; }
+    transform: translate -90px 0px; }
   20% {
     transform: translate(-60px, 0); }
   40% {
@@ -238,7 +252,7 @@ a {
     transform: translate(-60px, 0); } }
 @keyframes Box2 {
   from {
-    transform: translate -90px 0px; }
+    transform: translate -100px 0px; }
   to {
     transform: translate(-70px, 0); } }
 .btn_function {
@@ -261,6 +275,19 @@ a {
   0% {
     transform: translateY(-20px);
     opacity: 0; }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.5; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+@keyframes btn-wrappe-load1 {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0; }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.5; }
   100% {
     transform: translateY(0px);
     opacity: 1; } }

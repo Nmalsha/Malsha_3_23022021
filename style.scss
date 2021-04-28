@@ -106,7 +106,10 @@ font-family: $textfont;
    
     &:hover{
         transform: scale(1.1);
-        background-color:$secondary-color;
+        background-color:#ccccb3;
+        .icon-1{
+            color: #9356DC;
+        }
     }
     }
 
@@ -125,6 +128,7 @@ font-family: $textfont;
     .icon-1{
        margin-left: 20px;
        color: black;
+       
     }
     .btn_text{
         margin-left: 10px;
@@ -374,6 +378,12 @@ font-size: 20px;
 @media(min-width:768px)and (max-width:1028px){
     .explorer_button:hover{
         transform: scale(1.5);
+    }
+    .Fonctionnement{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
     }
        .button_group{
         font-size:nth($font-size,3);
