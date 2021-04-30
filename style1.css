@@ -116,6 +116,7 @@ h5 {
   border-radius: 1rem;
   background-color: white;
   z-index: 1;
+  cursor: pointer;
   width: 90%;
   margin-bottom: 10px; }
   .btn_wrappe:hover .button_group {
@@ -131,7 +132,7 @@ h5 {
     animation-timing-function: linear;
     animation-fill-mode: forwards; }
   .btn_wrappe:hover .check {
-    transform: rotate(360deg);
+    animation: checkrotate 0.5s ease-in-out;
     animation-fill-mode: forwards; }
 
 /*backword animation*/
@@ -146,28 +147,30 @@ h5 {
   animation: Box2 0.5s;
   animation-timing-function: linear;
   animation-direction: reverse; }
-.btn_wrappe:not(:hover) .check {
-  animation-fill-mode: forwards; }
 
 .first_btn {
+  position: relative;
   animation: btn-wrappe-load 500ms ease-in-out;
-  animation-direction: reverse;
-  transform-origin: bottom; }
+  transform-origin: bottom;
+  width: 90%; }
 
 .second_btn {
+  position: relative;
   animation: btn-wrappe-load 800ms ease-in-out;
-  animation-direction: reverse;
-  transform-origin: bottom; }
+  transform-origin: bottom;
+  width: 90%; }
 
 .third_btn {
+  position: relative;
   animation: btn-wrappe-load 1100ms ease-in-out;
-  animation-direction: reverse;
-  transform-origin: bottom; }
+  transform-origin: bottom;
+  width: 90%; }
 
 .forth_btn {
-  animation: btn-wrappe-load1 1400ms ease-in-out;
-  animation-direction: reverse;
-  transform-origin: bottom; }
+  position: relative;
+  animation: btn-wrappe-load 1400ms ease-in-out;
+  transform-origin: bottom;
+  width: 90%; }
 
 .box_value {
   background-color: white;
@@ -199,29 +202,6 @@ a {
   background-color: #99e2d0; }
 
 /*animation button*/
-/*
-@keyframes valueBox{
-    
-      0% {
-        transform:translate (-80px 0px);
-      }
-      20% {
-        transform: translate(-60px, 0);
-      }
-      40% {
-        transform: translate(-40px, 0);
-      }
-      60% {
-        transform: translate(-25px, 0);
-      }
-      80% {
-        transform: translate(-10px, 0);
-      }
-      100% {
-        transform: translate(1px, 0);
-      }
-    }
-    */
 @keyframes valueBox1 {
   from {
     transform: translate -80px 0px; }
@@ -255,6 +235,11 @@ a {
     transform: translate -90px 0px; }
   to {
     transform: translate(-60px, 0); } }
+@keyframes checkrotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 .btn_function {
   margin-left: 10px;
   color: black;
@@ -282,14 +267,14 @@ a {
     transform: translateY(0px);
     opacity: 1; } }
 @keyframes btn-wrappe-load1 {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0; }
-  50% {
-    transform: translateY(-5px);
-    opacity: 0.5; }
   100% {
     transform: translateY(0px);
+    opacity: 0; }
+  50% {
+    transform: translateY(-15px);
+    opacity: 0.5; }
+  0% {
+    transform: translateY(-5px);
     opacity: 1; } }
 /*plat section*/
 .plats_wrapper {
