@@ -17,14 +17,18 @@
 
     <body>
 <!--Logo-->
+<header>
         <div class="logo-wrapp">
             <a href="index.html" id="flash" ><i class="fas fa-arrow-left"></i>
             </a>
-            <div class="" >
-            <img  class="logo_menu" src="img/ohmyfood@2x.svg" alt="logo image">
-            </div>
+            <div class="logo" id="div_logo">
+                <h1>ohmyfood</h1>
+              </div>
         </div>
-<!--top photo-->
+
+    </header>
+    <!-- photo -->
+  
 <div class=" top_img" >
     <img class=" img_restaurent img_desktop" src="img/délice_des_sens.jpg" alt="Card image">
 </div>
@@ -32,11 +36,16 @@
 <!--mainplat-->
 <div class="mainwrapper">
 <div class="entree_wrapper">
-    <div> <div class="main_text">Le délice des sens <div><i class="far fa-heart"></i></div></div></div>
-    
+   <div> 
+       <div class="main_text">Le délice des sens 
+           <div class="hart_icon">
+                <i class="far fa-heart icon_linkt" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
     
     <p class="top_text">ENTREES</p>
-    
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
@@ -45,12 +54,12 @@
             <span class="second_text">Assaisonné au yuzu</span>
             </a> 
         </div>
-        <div class="box_value "><span class="value">25€</span></div>
+        <div class="box_value"><span class="value">25€</span></div>
         <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
 
     <div class="btn_wrappe second_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Bouchée de homard croustillant </span><br>
             <span>Et sa farandole de petits légumes</span>
@@ -61,7 +70,7 @@
    </div>
 
    <div class="btn_wrappe third_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Velouté de cèpes </span><br>
             <span>Aux truffes</span>
@@ -70,16 +79,16 @@
             <div class="box_value"><span class="value">20€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-    
-
+    </section>
 </div>
 
 <!--plate section-->
 <div class="plats_wrapper">
    
     <p class="plat_title top_text">PLATS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn">
+        <div class="  button_group scale_sizebtn ">
             <a class="btn_function " href="#">
             
             <span class="entree_text">Poulet rôti aux herbes de Provence </span><br>
@@ -93,7 +102,7 @@
     <div class="btn_wrappe second_btn">
         <div class="  button_group">
             <a class="btn_function" href="#">
-            <span class="entree_text">Langouste rôtie</span><br>
+            <span class="entree_text">Langouste rôtie </span><br>
             <span>Et ses légumes de saison</span>
             </a>
         </div>
@@ -104,14 +113,14 @@
    <div class="btn_wrappe third_btn">
         <div class="  button_group">
             <a class="btn_function" href="#">
-            <span class="entree_text">Côte de boeuf Angus</span><br>
+            <span class="entree_text">Côte de boeuf Angus </span><br>
             <span>Et sa purée de panais</span>
             </a> 
         </div>
             <div class="box_value"><span class="value">44€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 
 </div>
 
@@ -121,6 +130,7 @@
 <div class="desert_wrapper">
    
     <p class="plat_title top_text">DESSERTS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
@@ -137,7 +147,7 @@
         <div class="  button_group">
             <a class="btn_function" href="#">
             <span class="entree_text">Crème brulée </span><br>
-            <span>Revisité</span>
+            <span>Revisitée</span>
             </a>
         </div>
         <div class="box_value"><span class="value">22€</span></div>
@@ -147,19 +157,20 @@
    <div class="btn_wrappe third_btn">
         <div class="  button_group">
             <a class="btn_function" href="#">
-            <span class="entree_text">Tiramisu</span><br>
+            <span class="entree_text">Tiramisu </span><br>
             <span>À la noisette</span>
             </a> 
         </div>
             <div class="box_value"><span class="value">23€ </span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 </div>
 </div><!--closs main wrapper-->
 <div class="command_wrappe">
     <button class="command_button">Commander</button>
 </div>
+
 
 
 <!--footer section-->
@@ -178,7 +189,7 @@
         <a class="footer_text" href="#!" >Mentions légales</a>
       </li>
       <li>
-        <a class="footer_text" href="#!" >Contact</a>
+        <a class="footer_text" href="mailto:contact@ohmyfood.fr" >Contact</a>
       </li>
     </ul>
   </div>

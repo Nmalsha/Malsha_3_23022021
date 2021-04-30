@@ -17,26 +17,35 @@
 
     <body>
 <!--Logo-->
+<header>
         <div class="logo-wrapp">
             <a href="index.html" id="flash" ><i class="fas fa-arrow-left"></i>
             </a>
-            <div class="" >
-            <img  class="logo_menu" src="img/ohmyfood@2x.svg" alt="logo image">
-            </div>
+            <div class="logo" id="div_logo">
+                <h1>ohmyfood</h1>
+              </div>
         </div>
-<!--top photo-->
+
+    </header>
+    <!-- photo -->
+  
 <div class=" top_img" >
-    <img class=" img_restaurent img_desktop" src="img/note_enchantée.jpg" alt="Card image">
+    <img class=" img_restaurent img_desktop" src="img/la_palette.jpg" alt="Card image">
 </div>
 
 <!--mainplat-->
 <div class="mainwrapper">
 <div class="entree_wrapper">
-    <div> <div class="main_text">La note enchantée<div><i class="far fa-heart"></i></div></div></div>
-    
+   <div> 
+       <div class="main_text">La note enchantée 
+           <div class="hart_icon">
+                <i class="far fa-heart icon_linkt" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
     
     <p class="top_text">ENTREES</p>
-    
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
@@ -50,10 +59,10 @@
     </div>
 
     <div class="btn_wrappe second_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Caviar osciètre </span><br>
-            <span>Sur blini à la farine de blé noir </span>
+            <span>Sur blini à la farine de blé noir</span>
             </a>
         </div>
         <div class="box_value"><span class="value">35€</span></div>
@@ -61,34 +70,35 @@
    </div>
 
    <div class="btn_wrappe third_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Homard et espuma de potiron</span><br>
-            <span>Mariné aux zestes d'orange</span>
+            <span>Mariné aux zestes d'orange </span>
             </a> 
         </div>
             <div class="box_value"><span class="value">20€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-    <div class="btn_wrappe forth_btn">
-        <div class="  button_group">
+    <div class="btn_wrappe third_btn">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Foie gras de canard cuit entier</span><br>
             <span>Confiture de figue et pain toasté</span>
             </a> 
         </div>
-            <div class="box_value"><span class="value">35€</span></div>
+            <div class="box_value"><span class="value">40€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+    </section>
 </div>
 
 <!--plate section-->
 <div class="plats_wrapper">
    
     <p class="plat_title top_text">PLATS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn">
+        <div class="  button_group scale_sizebtn ">
             <a class="btn_function " href="#">
             
             <span class="entree_text">Noix de coquilles Saint-Jacques</span><br>
@@ -120,7 +130,7 @@
             <div class="box_value"><span class="value">44€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 
 </div>
 
@@ -130,6 +140,7 @@
 <div class="desert_wrapper">
    
     <p class="plat_title top_text">DESSERTS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
@@ -163,12 +174,13 @@
             <div class="box_value"><span class="value">23€ </span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 </div>
 </div><!--closs main wrapper-->
 <div class="command_wrappe">
     <button class="command_button">Commander</button>
 </div>
+
 
 
 <!--footer section-->
@@ -187,7 +199,7 @@
         <a class="footer_text" href="#!" >Mentions légales</a>
       </li>
       <li>
-        <a class="footer_text" href="#!" >Contact</a>
+        <a class="footer_text" href="mailto:contact@ohmyfood.fr" >Contact</a>
       </li>
     </ul>
   </div>

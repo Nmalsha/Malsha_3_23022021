@@ -17,14 +17,18 @@
 
     <body>
 <!--Logo-->
+<header>
         <div class="logo-wrapp">
             <a href="index.html" id="flash" ><i class="fas fa-arrow-left"></i>
             </a>
-            <div class="" >
-            <img  class="logo_menu" src="img/ohmyfood@2x.svg" alt="logo image">
-            </div>
+            <div class="logo" id="div_logo">
+                <h1>ohmyfood</h1>
+              </div>
         </div>
-<!--top photo-->
+
+    </header>
+    <!-- photo -->
+  
 <div class=" top_img" >
     <img class=" img_restaurent img_desktop" src="img/la_francaise.jpg" alt="Card image">
 </div>
@@ -32,16 +36,21 @@
 <!--mainplat-->
 <div class="mainwrapper">
 <div class="entree_wrapper">
-    <div> <div class="main_text">À la française <div><i class="far fa-heart"></i></div></div></div>
-    
+   <div> 
+       <div class="main_text">À la française
+           <div class="hart_icon">
+                <i class="far fa-heart icon_linkt" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
     
     <p class="top_text">ENTREES</p>
-    
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
             
-            <span class="entree_text">Tartare de poulpe acidulé </span><br>
+            <span class="entree_text">Tartare de poulpe acidulé</span><br>
             <span class="second_text">Aux zestes d'orange</span>
             </a> 
         </div>
@@ -50,7 +59,7 @@
     </div>
 
     <div class="btn_wrappe second_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Velouté de légumes d'antan</span><br>
             <span>Carotte, panais, topinambour </span>
@@ -61,25 +70,25 @@
    </div>
 
    <div class="btn_wrappe third_btn">
-        <div class="  button_group">
+        <div class="  button_group ">
             <a class="btn_function" href="#">
             <span class="entree_text">Soupe à l'oignon</span><br>
-            <span>Revisitée</span>
+            <span>Revisitée </span>
             </a> 
         </div>
             <div class="box_value"><span class="value">20€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-    
-
+    </section>
 </div>
 
 <!--plate section-->
 <div class="plats_wrapper">
    
     <p class="plat_title top_text">PLATS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn">
+        <div class="  button_group scale_sizebtn ">
             <a class="btn_function " href="#">
             
             <span class="entree_text">Coquilles Saint-Jacques</span><br>
@@ -111,7 +120,7 @@
             <div class="box_value"><span class="value">44€</span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 
 </div>
 
@@ -121,6 +130,7 @@
 <div class="desert_wrapper">
    
     <p class="plat_title top_text">DESSERTS</p>
+    <section class="main_btn_wrap">
     <div class="btn_wrappe first_btn">
         <div class="  button_group scale_sizebtn">
             <a class="btn_function " href="#">
@@ -136,7 +146,7 @@
     <div class="btn_wrappe second_btn">
         <div class="  button_group">
             <a class="btn_function" href="#">
-            <span class="entree_text">Fondant au chocolat </span><br>
+            <span class="entree_text">Fondant au chocolat</span><br>
             <span>Revisité</span>
             </a>
         </div>
@@ -154,12 +164,14 @@
             <div class="box_value"><span class="value">23€ </span></div>
             <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
     </div>
-
+</section>
 </div>
 </div><!--closs main wrapper-->
 <div class="command_wrappe">
     <button class="command_button">Commander</button>
 </div>
+
+
 
 <!--footer section-->
 <div class="footer" >
@@ -177,7 +189,7 @@
         <a class="footer_text" href="#!" >Mentions légales</a>
       </li>
       <li>
-        <a class="footer_text" href="#!" >Contact</a>
+        <a class="footer_text" href="mailto:contact@ohmyfood.fr" >Contact</a>
       </li>
     </ul>
   </div>
