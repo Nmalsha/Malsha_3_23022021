@@ -643,10 +643,10 @@ justify-content: center;
         }
         .entree_wrapper{
             justify-content: center;
-display: grid;
+            display: block;
             width: 100%;
             border-radius: 25px;
-            
+            padding: 0;
           
         }
         .button_group{
@@ -656,18 +656,18 @@ display: grid;
              
             .plats_wrapper{
                 justify-content: center;
-display: grid;
-width: 100%;
-border-radius: 25px;
-                
+                display: block;
+                width: 100%;
+                border-radius: 25px;
+                padding: 0;
                 
             }
             .desert_wrapper{
                 justify-content: center;
-                display: grid;
+                display: block;
                 width: 100%;
                 border-radius: 25px;
-               
+               padding: 0;
                 
             }
 #footer_logo {
