@@ -33,52 +33,60 @@
     <img class=" img_restaurent img_desktop" src="img/la_palette.jpg" alt="Card image">
 </div>
 
-<!--mainplat-->
+<!--maintext-->
 <div class="mainwrapper">
 <div class="entree_wrapper">
    <div> 
        <div class="main_text">La palette du gout 
            <div class="hart_icon">
-                <i class="far fa-heart icon_linkt" aria-hidden="true"></i>
+            <input id="checkbox" type="checkbox" name="res">
+            <label for="checkbox" title="favorit">
+           <i class="far fa-heart icon_linkt" aria-hidden="true"></i>
+           <i class="fas fa-heart icon_color" aria-hidden="true"></i>
+          </label>
             </div>
         </div>
     </div>
-    
+   <!--entree plate--> 
     <p class="top_text">ENTREES</p>
     <section class="main_btn_wrap">
-    <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn">
-            <a class="btn_function " href="#">
-            
-            <span class="entree_text">Fricassée d'escargot</span><br>
-            <span class="second_text">Au piment d'Espelette</span>
-            </a> 
-        </div>
-        <div class="box_value"><span class="value">25€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
+        <form class="menus" action="#" method="post">
+            <input id="btn1" type="radio" name="btn" value="btn1">
+            <label class="first_btn" for="btn1 ">
+                <span class="ttlmenu">
+                <strong>Fricassée d'escargot</strong><br>
+                <span>Au piment d'Espelette</span>
+                </span>
+                <span class="box_value" >25€</span>
+                <span class="check_box">
+                    <i class="fas fa-check cercle_check"></i>
+                </span>
+            </label>
+    
+            <input id="btn1" type="radio" name="btn" value="btn1">
+                <label class="second_btn" for="btn1 ">
+                    <span class="ttlmenu">
+                    <strong>Foie gras de canard mi-cuit</strong><br>
+                    <span>Et ses copeaux de truffe noire</span>
+                    </span>
+                    <span class="box_value" >35€</span>
+                    <span class="check_box">
+                        <i class="fas fa-check cercle_check"></i>
+                    </span>
+                </label>
+            <input id="btn1" type="radio" name="btn" value="btn1">
+                <label class="second_btn" for="btn1 ">
+                    <span class="ttlmenu">
+                    <strong>Oeuf au plat</strong><br>
+                    <span>Assaisonné à la truffe sur lit de caviar</span>
+                    </span>
+                    <span class="box_value" >20€</span>
+                    <span class="check_box">
+                        <i class="fas fa-check cercle_check"></i>
+                    </span>
+                </label>
 
-    <div class="btn_wrappe second_btn">
-        <div class="  button_group ">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Foie gras de canard mi-cuit</span><br>
-            <span>Et ses copeaux de truffe noire </span>
-            </a>
-        </div>
-        <div class="box_value"><span class="value">35€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-   </div>
-
-   <div class="btn_wrappe third_btn">
-        <div class="  button_group ">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Oeuf au plat</span><br>
-            <span>Assaisonné à la truffe sur lit de caviar </span>
-            </a> 
-        </div>
-            <div class="box_value"><span class="value">20€</span></div>
-            <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
+   
     </section>
 </div>
 
@@ -87,39 +95,44 @@
    
     <p class="plat_title top_text">PLATS</p>
     <section class="main_btn_wrap">
-    <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn ">
-            <a class="btn_function " href="#">
-            
-            <span class="entree_text">Filet de boeuf aux herbes</span><br>
-            <span class="second_text">Accompagné de sa ribambelle de légumes</span>
-            </a> 
-        </div>
-        <div class="box_value"><span class="value">40€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
 
-    <div class="btn_wrappe second_btn">
-        <div class="  button_group">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Parmentier de queue de boeuf</span><br>
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="first_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Filet de boeuf aux herbes</strong><br>
+            <span>Accompagné de sa ribambelle de légumes</span>
+            </span>
+            <span class="box_value" >40€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>
+
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="second_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Parmentier de queue de boeuf</strong><br>
             <span>À la truffe noire sur sa purée de panais</span>
-            </a>
-        </div>
-        <div class="box_value"><span class="value">35€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-   </div>
+            </span>
+            <span class="box_value" >35€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>
 
-   <div class="btn_wrappe third_btn">
-        <div class="  button_group">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Filet de turbot</span><br>
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="second_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Filet de turbot</strong><br>
             <span>Aux agrumes</span>
-            </a> 
-        </div>
-            <div class="box_value"><span class="value">44€</span></div>
-            <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
+            </span>
+            <span class="box_value" >44€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>
+    
+
 </section>
 
 </div>
@@ -131,39 +144,43 @@
    
     <p class="plat_title top_text">DESSERTS</p>
     <section class="main_btn_wrap">
-    <div class="btn_wrappe first_btn">
-        <div class="  button_group scale_sizebtn">
-            <a class="btn_function " href="#">
-            
-            <span class="entree_text">Paris-Brest</span><br>
-            <span class="second_text">Revisité</span>
-            </a> 
-        </div>
-        <div class="box_value"><span class="value">18€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
+     
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="first_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Paris-Brest</strong><br>
+            <span>Revisité</span>
+            </span>
+            <span class="box_value" >18€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>  
 
-    <div class="btn_wrappe second_btn">
-        <div class="  button_group">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Macaron au chocolat d'exception </span><br>
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="second_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Macaron au chocolat d'exception </strong><br>
             <span>Et glace à la vanille de Madagascar</span>
-            </a>
-        </div>
-        <div class="box_value"><span class="value">22€</span></div>
-        <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-   </div>
+            </span>
+            <span class="box_value" >22€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>
 
-   <div class="btn_wrappe third_btn">
-        <div class="  button_group">
-            <a class="btn_function" href="#">
-            <span class="entree_text">Mousse au chocolat </span><br>
+        <input id="btn1" type="radio" name="btn" value="btn1">
+        <label class="second_btn" for="btn1 ">
+            <span class="ttlmenu">
+            <strong>Mousse au chocolat</strong><br>
             <span>Au piment d'Espelette et à la truffe noire</span>
-            </a> 
-        </div>
-            <div class="box_value"><span class="value">23€ </span></div>
-            <div class="box"><div class="check"><i class="far fa-check"></i> </div></div>
-    </div>
+            </span>
+            <span class="box_value" >23€</span>
+            <span class="check_box">
+                <i class="fas fa-check cercle_check"></i>
+            </span>
+        </label>
+   
 </section>
 </div>
 </div><!--closs main wrapper-->
@@ -171,7 +188,7 @@
     <button class="command_button">Commander</button>
 </div>
 
-
+</form>
 
 <!--footer section-->
 <div class="footer" >

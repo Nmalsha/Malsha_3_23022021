@@ -21,6 +21,9 @@ body{
     display: flex;
 justify-content: center;
 align-items: center;
+background-color: white;
+
+
 }
 .spinner div {
     box-sizing: border-box;
@@ -63,7 +66,7 @@ align-items: center;
     @keyframes spinerfadeout{
 
         100%{
-            opacity: 0;
+            
             visibility: hidden;
         }
     }
@@ -315,16 +318,38 @@ font-family: $textfont;
 */
 
 /* hart animation*/
-
+#checkbox{
+    display: none;
+}
+#checkbox1{
+    display: none;
+}
+#checkbox2{
+    display: none;
+}
+#checkbox3{
+    display: none;
+}
+.icon_color{
+    font-size: 25px;
+    position: absolute;
+margin-left: -35px;
+margin-top: 8px;
+color: $primary-color ;
+visibility: hidden;
+}
 .icon_linkt{
     margin-right: 10px;
 margin-top: 10px;
 font-size: 25px;
-&:hover{
-    color:$primary-color; 
-font-weight: 900;
-}
+cursor: pointer;
 
+}
+.hart_icon input[type="checkbox"]:checked + label .fas{
+    visibility: visible;
+}
+.hart_icon input[type="checkbox"]:checked + label .far{
+    visibility: hidden;
 }
 /* Footer section */
 .footer{

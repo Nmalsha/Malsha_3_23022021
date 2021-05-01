@@ -59,17 +59,40 @@ display: grid;
         font-weight: bold;
         font-family: $titlefont;
     }
-    /* hart animation*/
-
-.icon_linkt{
-    margin-right: 10px;
-margin-top: 10px;
-font-size: 25px;
-&:hover{
-    color:$primary-color; 
-font-weight: 900;
-}
-} 
+    /* heart animation*/
+    #checkbox{
+        display: none;
+    }
+    #checkbox1{
+        display: none;
+    }
+    #checkbox2{
+        display: none;
+    }
+    #checkbox3{
+        display: none;
+    }
+    .icon_color{
+        font-size: 25px;
+        position: absolute;
+    margin-left: -35px;
+    margin-top: 8px;
+    color: $primary-color ;
+    visibility: hidden;
+    }
+    .icon_linkt{
+        margin-right: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    
+    }
+    .hart_icon input[type="checkbox"]:checked + label .fas{
+        visibility: visible;
+    }
+    .hart_icon input[type="checkbox"]:checked + label .far{
+        visibility: hidden;
+    }
 .mainwrapper{
         margin-top: 20px;
     }
@@ -98,7 +121,7 @@ font-weight: 900;
             white-space: nowrap;
         
     }
-   
+   /*
             .box{
                 width: calc(100%/4);
     height: 69px;
@@ -112,11 +135,19 @@ font-weight: 900;
     visibility: hidden;
  position: absolute;
 left: 100%;
-    
+transition: transform 0.5 ease-in-out;
 }
-.fa-check{
-    font-weight: 600;
-font-size: 14px;
+
+.box{
+    width: calc(100%/4);
+    background-color: #99e2d0;
+border-radius: 0 20px 20px 0;
+position: absolute;
+left: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+transition: transform 0.5 ease-in-out;
 }
 .check{
     text-align: center;
@@ -126,10 +157,18 @@ width: 25px;
 transition: transform 0.5s ;
 animation-fill-mode: both;
 }
+*/
+.fa-check{
+    font-weight: 600;
+font-size: 14px;
+
+}
+
 .main_btn_wrap{
     display: grid;
 justify-items: center;
 }
+/*
 .btn_wrappe{
     display: flex;
     overflow: hidden;
@@ -142,6 +181,16 @@ z-index: 1;
 cursor: pointer;
 width: 90%;
 margin-bottom: 10px;
+&:hover{
+    .box_value{
+     width: calc(100%/3);
+        
+    }
+    .box{
+       transition: transformX(-100%);
+    }
+}
+}
 
     &:hover {
         .button_group{
@@ -170,9 +219,10 @@ margin-bottom: 10px;
     }
 
     }
+    
 }
-
-/*backword animation*/
+*/
+/*backword animation
 .btn_wrappe:not(:hover){
     .button_group{
         width: 100%;
@@ -195,7 +245,7 @@ margin-bottom: 10px;
 
 
 }
-
+*/
 .first_btn{
     position: relative;
     animation: btn-wrappe-load $firstitemloaddelay ease-in-out;
@@ -215,15 +265,10 @@ margin-bottom: 10px;
     animation: btn-wrappe-load $thirditemloaddelay ease-in-out;
    
     transform-origin: bottom;
-    width: 90%;
-}
-.forth_btn{
-    position: relative;
-    animation: btn-wrappe-load $forthitemloaddelay ease-in-out;
-    
     transform-origin: bottom;
     width: 90%;
 }
+/*
 .box_value{
     background-color: white;
     display: flex;
@@ -234,9 +279,170 @@ margin-bottom: 10px;
     border-radius: 0 20px 20px 0;
     padding-top: 25px;
     text-align: right; 
+transition: width linear;
+transition-duration: 2s;
 
-   
 }
+*/
+/* new animation*/
+.btn_wrappe{
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: space-between;
+position: relative;
+border-radius: 1rem;
+background-color: white;
+z-index: 1;
+cursor: pointer;
+width: 90%;
+margin-bottom: 10px;
+
+}
+.box_value{
+    background-color: white;
+    display: flex;
+    width: calc(100%/5);
+    flex: 0 0 auto;
+    font-size:nth($font-size,4);
+    
+    border-radius: 0 20px 20px 0;
+    
+    text-align: center; 
+transition: width 0.5s ease-in-out;
+
+}
+.box{
+    width: calc(100%/4);
+    background-color: #99e2d0;
+border-radius: 0 20px 20px 0;
+position: absolute;
+left: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+
+}
+
+#btn1{
+    display: none;
+}
+
+.menus  label{
+    display: flex;
+justify-content: center;
+position: relative;
+margin-top: 5px;
+margin-bottom: 8px;
+overflow: hidden;
+flex-wrap: nowrap;
+border-radius: 1rem;
+background-color: #fff;
+cursor: pointer;
+z-index: 1;
+height: 70px;
+align-items: center;
+}
+.main_btn_wrap label{
+    display: flex;
+justify-content: center;
+position: relative;
+margin-top: 5px;
+margin-bottom: 8px;
+overflow: hidden;
+flex-wrap: nowrap;
+border-radius: 1rem;
+background-color: #fff;
+cursor: pointer;
+z-index: 1;
+height: 70px;
+align-items: center;
+}
+.ttlmenu{
+    margin-right: auto;
+    overflow: hidden;
+    font-size: 14px; 
+    cursor: pointer;
+    margin-left: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* value box animation*/
+.menus input[type="radio"]:checked + label .box_value ,
+.menus input[type="radio"] + label:hover .box_value,
+.menus input[type="radio"] +label:focus .box_value {
+    width: calc(100%/3);
+  
+}
+.main_btn_wrap input[type="radio"]:checked + label .box_value ,
+.main_btn_wrap input[type="radio"] + label:hover .box_value,
+.main_btn_wrap input[type="radio"] +label:focus .box_value {
+    width: calc(100%/3);
+  
+}
+.check_box{
+    position: absolute;
+left: 100%;
+
+height: 100%;
+background-color: #99e2d0;
+
+width: calc(100%/5);
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 0.5s ease-in-out;
+}
+.check_box i{
+    color:#99e2d0 ;
+    
+}
+.cercle_check{
+    background-color: white;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    font-style: normal; 
+    width: 25px;
+height: 25px;
+border-radius: 100%;
+align-items: center;
+justify-content: center;
+
+}
+/*check box animation*/
+.menus input[type="radio"]:checked + label .check_box ,
+.menus input[type="radio"] + label:hover .check_box,
+.menus input[type="radio"] +label:focus .check_box {
+    transform: translateX(-100%);
+}
+.main_btn_wrap input[type="radio"]:checked + label .check_box ,
+.main_btn_wrap input[type="radio"] + label:hover .check_box,
+.main_btn_wrap input[type="radio"] +label:focus .check_box {
+    transform: translateX(-100%);
+}
+
+/*check animation*/
+.menus input[type="radio"]:checked + label .fas,
+.menus input[type="radio"] + label:hover .fas,
+.menus input[type="radio"] +label:focus .fas{
+    
+    animation: checkrotate 0.5s ease-in-out ;
+        animation-fill-mode: forwards;
+   
+    
+}
+.main_btn_wrap input[type="radio"]:checked + label .fas,
+.main_btn_wrap input[type="radio"] + label:hover .fas,
+.main_btn_wrap input[type="radio"] +label:focus .fas{
+    
+    animation: checkrotate 0.5s ease-in-out ;
+        animation-fill-mode: forwards;
+   
+    
+}
+
+
  a{
     text-decoration: none;
 }
@@ -285,29 +491,7 @@ justify-content: space-between;
     
       }
     
-    @keyframes Box{
-    
-        0% {
-          transform:translate (-90px 0px);
-        }
-        20% {
-          transform: translate(-60px, 0);
-        }
-        40% {
-          transform: translate(-40px, 0);
-        }
-        60% {
-          transform: translate(-20px, 0);
-        }
-        80% {
-          transform: translate(-10px, 0);
-        }
-        100% {
-          transform: translate(1px, 0);
-        }
-        
-        
-      }
+   
      
       @keyframes Box1{
     
