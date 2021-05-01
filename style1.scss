@@ -268,6 +268,14 @@ margin-bottom: 10px;
     transform-origin: bottom;
     width: 90%;
 }
+.forth_btn{
+    position: relative;
+    animation: btn-wrappe-load $forthitemloaddelay ease-in-out;
+   
+    transform-origin: bottom;
+    transform-origin: bottom;
+    width: 90%;
+}
 /*
 .box_value{
     background-color: white;
@@ -465,52 +473,6 @@ justify-content: space-between;
     background-color: #99e2d0; 
 }
 /*animation button*/
-
-
-    @keyframes valueBox1{
-    
-        from {
-          transform:translate (-80px 0px);
-        }
-        to {
-          transform: translate(-60px, 0);
-        }
-        
-       
-      }
-    
-      @keyframes valueBox2{
-    
-        from {
-          transform:translate (-90px 0px);
-        }
-        to {
-          transform: translate(-60px, 0);
-        }
-        
-    
-      }
-    
-   
-     
-      @keyframes Box1{
-    
-        from {
-          transform:translate (-80px 0px);
-        }
-        to{
-          transform: translate(-60px, 0);
-        }
-    }
-    @keyframes Box2{
-    
-        from {
-          transform:translate (-90px 0px);
-        }
-        to{
-          transform: translate(-60px, 0);
-        }
-    }
 
 
     @keyframes checkrotate{
@@ -719,6 +681,7 @@ border-radius: 25px;
 }
 
 @media(min-width:768px)and (max-width:1028px){
+    
     .mainwrapper{
         flex-wrap: wrap;
 flex-direction: column;

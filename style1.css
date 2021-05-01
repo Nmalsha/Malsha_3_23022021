@@ -244,6 +244,13 @@ margin-bottom: 10px;
   transform-origin: bottom;
   width: 90%; }
 
+.forth_btn {
+  position: relative;
+  animation: btn-wrappe-load 1400ms ease-in-out;
+  transform-origin: bottom;
+  transform-origin: bottom;
+  width: 90%; }
+
 /*
 .box_value{
     background-color: white;
@@ -417,26 +424,6 @@ a {
   background-color: #99e2d0; }
 
 /*animation button*/
-@keyframes valueBox1 {
-  from {
-    transform: translate -80px 0px; }
-  to {
-    transform: translate(-60px, 0); } }
-@keyframes valueBox2 {
-  from {
-    transform: translate -90px 0px; }
-  to {
-    transform: translate(-60px, 0); } }
-@keyframes Box1 {
-  from {
-    transform: translate -80px 0px; }
-  to {
-    transform: translate(-60px, 0); } }
-@keyframes Box2 {
-  from {
-    transform: translate -90px 0px; }
-  to {
-    transform: translate(-60px, 0); } }
 @keyframes checkrotate {
   from {
     transform: rotate(0deg); }
