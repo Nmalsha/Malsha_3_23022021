@@ -304,6 +304,33 @@ transition-duration: 2s;
 #btn1 {
   display: none; }
 
+#btn2 {
+  display: none; }
+
+#btn3 {
+  display: none; }
+
+#btn4 {
+  display: none; }
+
+#btn5 {
+  display: none; }
+
+#btn6 {
+  display: none; }
+
+#btn7 {
+  display: none; }
+
+#btn8 {
+  display: none; }
+
+#btn9 {
+  display: none; }
+
+#btn10 {
+  display: none; }
+
 .menus label {
   display: flex;
   justify-content: center;
@@ -438,6 +465,9 @@ a {
   white-space: nowrap; }
 
 /*Entrees section*/
+.invisible {
+  display: none; }
+
 .entree_wrapper {
   background-color: #f5f5f0;
   width: 25%;
