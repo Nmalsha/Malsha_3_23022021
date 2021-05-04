@@ -438,7 +438,8 @@ ul {
     background-color: #f5f5f0; }
 
   .img_restaurent {
-    border-radius: 10px 0px 0px 10px; }
+    border-radius: 10px 0px 0px 10px;
+    height: 10rem; }
 
   .wrapper_restaurent {
     flex-wrap: wrap; }
