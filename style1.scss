@@ -599,8 +599,8 @@ justify-content: center;
         .command_button {
     display: grid;
     justify-items: center;
-            padding: 8px;
-            width:130px;
+            padding: 12px;
+            width:200px;
             margin-top: 20px;
             margin-bottom: 40px;
             border-radius: 20px;
@@ -716,7 +716,9 @@ justify-content: center;
 .links{
     justify-content: left;
 }
-
+.top_text{
+    margin-left: 20px;
+}
 }
 
 @media(min-width:768px)and (max-width:1028px){
@@ -753,7 +755,7 @@ margin-top: -50px;
 border-radius: 3rem 3rem 0 0;
 }
 .top_text{
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .plats_wrapper{
     width: 100%;

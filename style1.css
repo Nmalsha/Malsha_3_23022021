@@ -529,8 +529,8 @@ a {
 .command_button {
   display: grid;
   justify-items: center;
-  padding: 8px;
-  width: 130px;
+  padding: 12px;
+  width: 200px;
   margin-top: 20px;
   margin-bottom: 40px;
   border-radius: 20px;
@@ -634,7 +634,10 @@ ul {
     margin-left: 30px; }
 
   .links {
-    justify-content: left; } }
+    justify-content: left; }
+
+  .top_text {
+    margin-left: 20px; } }
 @media (min-width: 768px) and (max-width: 1028px) {
   .mainwrapper {
     flex-wrap: wrap;
@@ -668,7 +671,7 @@ ul {
     border-radius: 3rem 3rem 0 0; }
 
   .top_text {
-    margin-left: 20px; }
+    margin-left: 25px; }
 
   .plats_wrapper {
     width: 100%;
