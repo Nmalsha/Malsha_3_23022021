@@ -191,7 +191,7 @@ h1 {
   padding: 5px 10px;
   font-weight: bold;
   top: -1;
-  margin-left: -90px;
+  margin-left: 140px;
   margin-top: 10px;
   border: none; }
 
@@ -249,38 +249,6 @@ h1 {
   background-color: #f5f5f0;
   padding-bottom: 30px; }
 
-    /*
-    .like{
-        position: relative;
-    }
-    .default_i{
-        z-index: 1;
-        width: 25px;
-}
-    .houver_i{
-        z-index: 2;
-        width: 25px;
-        margin-left: -25px;
-        position: absolute;
-        opacity: 0;
-        margin-top: 2px;
-
-    }
-    .default_i:focus{
-       cursor: alias;
-       opacity: 0;
-}
-.houver_i:focus{
-    opacity: 1;
-   
-
-}
-.heart_1:hover{
-    background: url(img/canvass.png);
-    background-repeat: no-repeat;
-    transition: max-height 0.25s ease-in;
-}
-*/
 /* hart animation*/
 #checkbox {
   display: none; }
