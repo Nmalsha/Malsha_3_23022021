@@ -331,10 +331,10 @@ font-size: 25px;
 cursor: pointer;
 
 }
-.hart_icon input[type="checkbox"]:checked + label .fas{
+.hart_icon input[type="checkbox"]:hover + label .fas{
     visibility: visible;
 }
-.hart_icon input[type="checkbox"]:checked + label .far{
+.hart_icon input[type="checkbox"]:hover + label .far{
     visibility: hidden;
 }
 /* Footer section */
@@ -389,7 +389,12 @@ transform: scale(1.2);
     }
 
 
-
+    .hart_icon input[type="checkbox"]:checked + label .fas{
+        visibility: visible;
+    }
+    .hart_icon input[type="checkbox"]:checked + label .far{
+        visibility: hidden;
+    }
  
 .icon { 
     
