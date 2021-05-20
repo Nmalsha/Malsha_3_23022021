@@ -268,7 +268,8 @@ h1 {
   margin-left: -35px;
   margin-top: 8px;
   color: #9356DC;
-  visibility: hidden; }
+  visibility: hidden;
+  cursor: pointer; }
 
 .icon_linkt {
   margin-right: 10px;
